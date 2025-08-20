@@ -1,0 +1,12 @@
+Model,Parallelism Model,Total Tests,Successful Builds,Build Success Rate
+Kimi K2,mpi,60,54,0.9
+Gemini Pro,mpi,60,53,0.8833333333333333
+Gemma3,mpi,60,39,0.65
+Gemini Flash,mpi,60,36,0.6
+**H2LooP v0.1-coder**,mpi,60,34,0.5666666666666667
+**H2looP v0.1-multimodal**,mpi,60,33,0.55
+Qwen 2.5 Coder,mpi,60,31,0.5166666666666667
+deepseek_coder_v2lite,mpi,60,28,0.4666666666666667
+Llama4 Maverick,mpi,60,14,0.2333333333333333
+Mistral Nemo,mpi,60,5,0.0833333333333333
+Llama3.3 8B,mpi,60,3,0.05

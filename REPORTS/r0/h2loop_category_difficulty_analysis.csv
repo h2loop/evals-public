@@ -1,0 +1,25 @@
+model,category,difficulty,sample_count,compile_rate,test_pass_rate
+H2looP v0.1-Coder,Advanced Programming,easy,4,100.0,100.0
+H2looP v0.1-Coder,Advanced Programming,hard,48,66.66666666666666,39.58333333333333
+H2looP v0.1-Coder,Advanced Programming,medium,21,76.19047619047619,57.14285714285714
+H2looP v0.1-Coder,Basic Programming,hard,4,50.0,25.0
+H2looP v0.1-Coder,Basic Programming,medium,12,100.0,50.0
+H2looP v0.1-Coder,Mathematics,easy,1,100.0,100.0
+H2looP v0.1-Coder,Mathematics,hard,2,100.0,50.0
+H2looP v0.1-Coder,Operating System,easy,2,50.0,50.0
+H2looP v0.1-Coder,Operating System,hard,6,16.666666666666664,16.666666666666664
+H2looP v0.1-Coder,Operating System,medium,4,50.0,50.0
+H2looP v0.1-Coder,Others,easy,1,100.0,0.0
+H2looP v0.1-Coder,Software Engineering,hard,2,0.0,0.0
+H2looP v0.1-Multimodal,Advanced Programming,easy,4,100.0,100.0
+H2looP v0.1-Multimodal,Advanced Programming,hard,47,63.829787234042556,29.78723404255319
+H2looP v0.1-Multimodal,Advanced Programming,medium,21,76.19047619047619,61.904761904761905
+H2looP v0.1-Multimodal,Basic Programming,hard,4,75.0,25.0
+H2looP v0.1-Multimodal,Basic Programming,medium,12,100.0,50.0
+H2looP v0.1-Multimodal,Mathematics,easy,1,100.0,100.0
+H2looP v0.1-Multimodal,Mathematics,hard,2,100.0,100.0
+H2looP v0.1-Multimodal,Operating System,easy,2,0.0,0.0
+H2looP v0.1-Multimodal,Operating System,hard,6,0.0,0.0
+H2looP v0.1-Multimodal,Operating System,medium,4,0.0,0.0
+H2looP v0.1-Multimodal,Others,easy,1,100.0,0.0
+H2looP v0.1-Multimodal,Software Engineering,hard,2,0.0,0.0

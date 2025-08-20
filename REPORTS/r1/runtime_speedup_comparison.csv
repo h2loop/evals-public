@@ -1,0 +1,6 @@
+Model,Serial_Avg_Runtime_s,MPI_Avg_Runtime_s,Avg_Speedup_2proc,Avg_Speedup_4proc,Valid_Serial_Tests,Valid_MPI_Tests
+H2looP v0.1-multimodal,0.024163,0.046880,0.82x,0.81x,46,20
+H2LooP v0.1-coder,0.017158,0.024121,1.45x,1.93x,35,21
+deepseek_coder_v2lite,0.038253,0.146830,1.46x,2.05x,13,17
+Llama3.3 8B,0.060568,N/A,N/A,N/A,4,0
+Mistral Nemo,0.029151,0.093922,1.79x,2.92x,1,3

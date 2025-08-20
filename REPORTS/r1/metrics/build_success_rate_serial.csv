@@ -1,0 +1,12 @@
+Model,Parallelism Model,Total Tests,Successful Builds,Build Success Rate
+Gemini Pro,serial,60,57,0.95
+Kimi K2,serial,60,55,0.9166666666666666
+Gemma3,serial,60,54,0.9
+**H2looP v0.1-multimodal**,serial,60,53,0.8833333333333333
+Gemini Flash,serial,60,51,0.85
+Qwen 2.5 Coder,serial,60,41,0.6833333333333333
+**H2LooP v0.1-coder**,serial,60,40,0.6666666666666666
+Llama4 Maverick,serial,60,30,0.5
+deepseek_coder_v2lite,serial,60,15,0.25
+Llama3.3 8B,serial,60,5,0.0833333333333333
+Mistral Nemo,serial,60,2,0.0333333333333333

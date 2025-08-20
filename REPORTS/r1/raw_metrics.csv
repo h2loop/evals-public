@@ -1,0 +1,1321 @@
+model,problem_type,problem_name,parallelism_model,response_time,total_tokens,prompt_tokens,source_write_success,did_build,is_source_valid,did_any_run,did_all_run,are_any_valid,are_all_valid,best_runtime,avg_runtime,speedup_2proc,speedup_4proc,num_successful_runs
+Gemini Flash,geometry,13_geometry_closest_pair_2d,mpi,,,,True,True,True,True,True,True,True,0.0798727,0.1578228666666666,1.8160235987525224,3.17787930043682,3
+Gemini Flash,geometry,13_geometry_closest_pair_2d,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,geometry,11_geometry_convex_hull_perimeter,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,geometry,11_geometry_convex_hull_perimeter,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,geometry,12_geometry_smallest_triangle,mpi,,,,True,True,True,True,True,True,True,0.0039402,0.0136987833333333,0.1800205596801827,0.2580581780314566,3
+Gemini Flash,geometry,12_geometry_smallest_triangle,serial,,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Gemini Flash,geometry,14_geometry_closest_pair_1d,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,geometry,14_geometry_closest_pair_1d,serial,,,,True,True,True,True,True,True,True,0.0009862168,0.0009862168,,,1
+Gemini Flash,geometry,10_geometry_convex_hull,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,geometry,10_geometry_convex_hull,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,transform,59_transform_map_function,mpi,,,,True,True,True,True,True,True,True,0.00252075,0.0048210166666666,1.4828582714817355,2.829475354557175,3
+Gemini Flash,transform,59_transform_map_function,serial,,,,True,True,True,True,True,True,True,0.0056951834,0.0056951834,,,1
+Gemini Flash,transform,57_transform_inverse_offset,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,transform,57_transform_inverse_offset,serial,,,,True,True,True,True,True,True,True,0.0005119832,0.0005119832,,,1
+Gemini Flash,transform,55_transform_relu,mpi,,,,True,True,True,True,True,True,True,0.00926605,0.0158838833333333,1.7140675377566603,2.616260434597266,3
+Gemini Flash,transform,55_transform_relu,serial,,,,True,True,True,True,True,True,True,0.0234432082,0.0234432082,,,1
+Gemini Flash,transform,56_transform_negate_odds,mpi,,,,True,True,True,True,True,True,True,0.00217635,0.0028725166666666,1.0185521780006268,1.4934178785581362,3
+Gemini Flash,transform,56_transform_negate_odds,serial,,,,True,True,True,True,True,True,True,0.0033880914,0.0033880914,,,1
+Gemini Flash,transform,58_transform_squaring,mpi,,,,True,True,True,True,True,True,True,0.000539,0.0007681333333333,0.6345655757004944,0.5884279475982532,3
+Gemini Flash,transform,58_transform_squaring,serial,,,,True,True,True,True,True,True,True,0.0006049498,0.0006049498,,,1
+Gemini Flash,reduce,26_reduce_product_of_inverses,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,reduce,26_reduce_product_of_inverses,serial,,,,True,True,True,True,True,True,True,4.98e-08,4.98e-08,,,1
+Gemini Flash,reduce,27_reduce_average,mpi,,,,True,True,True,True,True,True,True,0.01063405,0.0173412833333333,1.7586579220986962,2.481293580526704,3
+Gemini Flash,reduce,27_reduce_average,serial,,,,True,True,True,True,True,True,True,0.0278486002,0.0278486002,,,1
+Gemini Flash,reduce,28_reduce_smallest_odd_number,mpi,,,,True,True,True,True,True,True,True,0.0885844,0.0977397666666666,0.9210071312645493,0.8168014103831344,3
+Gemini Flash,reduce,28_reduce_smallest_odd_number,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,reduce,25_reduce_xor,mpi,,,,True,True,True,True,True,True,True,0.0071121,0.0110561666666666,1.8585031923996755,2.3819968785590757,3
+Gemini Flash,reduce,25_reduce_xor,serial,,,,True,True,True,True,True,True,True,0.028494775,0.028494775,,,1
+Gemini Flash,reduce,29_reduce_sum_of_min_of_pairs,mpi,,,,True,True,True,True,True,True,True,0.0151919,0.0192369666666666,1.5222980667329302,1.1925599719477733,3
+Gemini Flash,reduce,29_reduce_sum_of_min_of_pairs,serial,,,,True,True,True,True,True,True,True,2.46e-08,2.46e-08,,,1
+Gemini Flash,dense_la,00_dense_la_lu_decomp,mpi,,,,True,True,True,True,True,True,False,0.1138262,0.1138262,,,1
+Gemini Flash,dense_la,00_dense_la_lu_decomp,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,dense_la,04_dense_la_gemv,mpi,,,,True,True,True,True,True,True,True,0.0147779,0.0261912,1.7884076594591525,2.7687831153276177,3
+Gemini Flash,dense_la,04_dense_la_gemv,serial,,,,True,True,True,True,True,True,True,0.0404654668,0.0404654668,,,1
+Gemini Flash,dense_la,02_dense_la_gemm,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,dense_la,02_dense_la_gemm,serial,,,,True,True,True,True,True,True,True,0.0169862332,0.0169862332,,,1
+Gemini Flash,dense_la,01_dense_la_solve,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,dense_la,01_dense_la_solve,serial,,,,True,True,True,True,True,True,True,0.115647775,0.115647775,,,1
+Gemini Flash,dense_la,03_dense_la_axpy,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,dense_la,03_dense_la_axpy,serial,,,,True,True,True,True,True,True,True,0.009396675,0.009396675,,,1
+Gemini Flash,sort,41_sort_k-th_smallest_element,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sort,41_sort_k-th_smallest_element,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sort,43_sort_sort_an_array_of_structs_by_key,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sort,43_sort_sort_an_array_of_structs_by_key,serial,,,,True,True,True,True,True,True,True,0.003058475,0.003058475,,,1
+Gemini Flash,sort,44_sort_sort_non-zero_elements,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sort,44_sort_sort_non-zero_elements,serial,,,,True,True,True,True,True,True,True,0.0015786832,0.0015786832,,,1
+Gemini Flash,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,,,,True,True,True,True,True,True,False,0.0256112,0.0256112,,,1
+Gemini Flash,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,,,,True,True,True,True,True,True,True,0.024374275,0.024374275,,,1
+Gemini Flash,sort,42_sort_sorted_ranks,mpi,,,,True,True,True,True,True,True,True,0.0095596,0.0121534833333333,0.7134668776308326,0.7080110057361659,3
+Gemini Flash,sort,42_sort_sorted_ranks,serial,,,,True,True,True,True,True,True,True,0.0089521666,0.0089521666,,,1
+Gemini Flash,sparse_la,46_sparse_la_spmm,mpi,,,,True,True,True,True,True,True,True,0.01233075,0.01255185,1.0463161977407522,1.0501388804411735,3
+Gemini Flash,sparse_la,46_sparse_la_spmm,serial,,,,True,True,True,True,True,True,True,0.0055370584,0.0055370584,,,1
+Gemini Flash,sparse_la,47_sparse_la_spmv,mpi,,,,True,True,True,True,True,True,True,0.0011693,0.0014349,1.4926879329513385,1.2556834532374102,3
+Gemini Flash,sparse_la,47_sparse_la_spmv,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sparse_la,48_sparse_la_sparse_axpy,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Flash,sparse_la,48_sparse_la_sparse_axpy,serial,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Flash,sparse_la,45_sparse_la_sparse_solve,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sparse_la,45_sparse_la_sparse_solve,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,sparse_la,49_sparse_la_sparse_lu_decomp,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,stencil,50_stencil_xor_kernel,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,stencil,50_stencil_xor_kernel,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,stencil,51_stencil_edge_kernel,mpi,,,,True,True,True,True,True,True,True,0.03467545,0.05507395,1.3815034806847537,2.1839543538728408,3
+Gemini Flash,stencil,51_stencil_edge_kernel,serial,,,,True,True,True,True,True,True,True,0.064943425,0.064943425,,,1
+Gemini Flash,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,,,,True,True,True,True,True,True,True,0.02438225,0.0293337166666666,1.4627465402109745,1.5497503306708773,3
+Gemini Flash,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0222491998,0.0222491998,,,1
+Gemini Flash,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,,,,True,True,True,True,True,True,True,0.0287174,0.04073715,0.5477649661907623,0.6992722964968692,3
+Gemini Flash,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0100566832,0.0100566832,,,1
+Gemini Flash,stencil,54_stencil_game_of_life,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Flash,stencil,54_stencil_game_of_life,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,histogram,20_histogram_pixel_histogram,mpi,,,,True,True,True,True,True,True,True,0.0013762,0.0017632333333333,1.6968463886063072,1.4795666223151491,3
+Gemini Flash,histogram,20_histogram_pixel_histogram,serial,,,,True,True,True,True,True,True,True,0.0017305168,0.0017305168,,,1
+Gemini Flash,histogram,24_histogram_count_quartile,mpi,,,,True,True,True,True,True,True,True,0.0479474,0.0912771333333333,1.6586849464694304,2.9391207865285707,3
+Gemini Flash,histogram,24_histogram_count_quartile,serial,,,,True,True,True,True,True,True,True,0.1020578836,0.1020578836,,,1
+Gemini Flash,histogram,22_histogram_count_quadrants,mpi,,,,True,True,True,True,True,True,True,0.01564415,0.0275756833333333,1.7235924856782092,2.713640562127057,3
+Gemini Flash,histogram,22_histogram_count_quadrants,serial,,,,True,True,True,True,True,True,True,0.0399396332,0.0399396332,,,1
+Gemini Flash,histogram,23_histogram_first_letter_counts,mpi,,,,True,True,True,True,True,True,True,0.0025372,0.0030664333333333,1.3075404385023033,1.4878606337695095,3
+Gemini Flash,histogram,23_histogram_first_letter_counts,serial,,,,True,True,True,True,True,True,True,0.0036584752,0.0036584752,,,1
+Gemini Flash,histogram,21_histogram_bin_0-100,mpi,,,,True,True,True,True,True,True,True,0.0026161,0.0037275,1.5701770177017702,2.0004586980620007,3
+Gemini Flash,histogram,21_histogram_bin_0-100,serial,,,,True,True,True,True,True,True,True,0.004223992,0.004223992,,,1
+Gemini Flash,search,39_search_xor_contains,mpi,,,,True,True,True,True,True,True,True,1.79e-05,2.14e-05,1.11731843575419,0.7604562737642586,3
+Gemini Flash,search,39_search_xor_contains,serial,,,,True,True,True,True,True,True,True,2.70832e-05,2.70832e-05,,,1
+Gemini Flash,search,37_search_find_the_closest_number_to_pi,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,search,37_search_find_the_closest_number_to_pi,serial,,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Gemini Flash,search,38_search_find_the_first_even_number,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,search,38_search_find_the_first_even_number,serial,,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemini Flash,search,35_search_search_for_last_struct_by_key,mpi,,,,True,True,True,True,True,True,True,0.0013946,0.0026537833333333,0.6544345377756922,0.3144000450882038,3
+Gemini Flash,search,35_search_search_for_last_struct_by_key,serial,,,,True,True,True,True,True,True,True,2.48e-08,2.48e-08,,,1
+Gemini Flash,search,36_search_check_if_array_contains_value,mpi,,,,True,True,True,True,True,True,True,0.0003095,0.0003990666666666,1.8106623586429724,1.7121906507791016,3
+Gemini Flash,search,36_search_check_if_array_contains_value,serial,,,,True,True,True,True,True,True,True,0.0007728414,0.0007728414,,,1
+Gemini Flash,fft,05_fft_inverse_fft,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,fft,05_fft_inverse_fft,serial,,,,True,True,True,True,True,True,True,0.0074473502,0.0074473502,,,1
+Gemini Flash,fft,08_fft_split_fft,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Flash,fft,08_fft_split_fft,serial,,,,True,True,True,True,True,True,True,0.0230608834,0.0230608834,,,1
+Gemini Flash,fft,07_fft_fft_conjugate,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,fft,07_fft_fft_conjugate,serial,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Flash,fft,09_fft_fft_out_of_place,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,fft,09_fft_fft_out_of_place,serial,,,,True,True,True,True,True,True,True,0.0056050418,0.0056050418,,,1
+Gemini Flash,fft,06_fft_dft,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,fft,06_fft_dft,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Flash,scan,33_scan_reverse_prefix_sum,mpi,,,,True,True,True,True,True,True,True,0.0061242,0.007507,1.3362724927337448,0.9963960453903472,3
+Gemini Flash,scan,33_scan_reverse_prefix_sum,serial,,,,True,True,True,True,True,True,True,0.0021776164,0.0021776164,,,1
+Gemini Flash,scan,30_scan_prefix_sum,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,scan,30_scan_prefix_sum,serial,,,,True,True,True,True,True,True,True,0.0118828834,0.0118828834,,,1
+Gemini Flash,scan,34_scan_largest_contiguous_subarray_sum,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,scan,34_scan_largest_contiguous_subarray_sum,serial,,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemini Flash,scan,32_scan_sum_of_prefix_sum_array,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,scan,32_scan_sum_of_prefix_sum_array,serial,,,,True,True,True,True,True,True,True,0.0057856162,0.0057856162,,,1
+Gemini Flash,scan,31_scan_scan_with_min_function,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,scan,31_scan_scan_with_min_function,serial,,,,True,True,True,True,True,True,True,0.0071444334,0.0071444334,,,1
+Gemini Flash,graph,17_graph_highest_degree,mpi,,,,True,True,True,True,True,True,True,0.0020251,0.0023325333333333,1.0002815881572065,1.2278899807416916,3
+Gemini Flash,graph,17_graph_highest_degree,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,graph,16_graph_largest_component,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,graph,16_graph_largest_component,serial,,,,True,True,True,True,True,True,True,0.092783825,0.092783825,,,1
+Gemini Flash,graph,19_graph_shortest_path,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,graph,19_graph_shortest_path,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,graph,15_graph_edge_count,mpi,,,,True,True,True,True,True,True,True,0.0049752,0.0062478333333333,1.6879136325478787,1.7378195851423055,3
+Gemini Flash,graph,15_graph_edge_count,serial,,,,True,True,True,True,True,True,True,3.32e-08,3.32e-08,,,1
+Gemini Flash,graph,18_graph_count_components,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Flash,graph,18_graph_count_components,serial,,,,True,True,True,True,True,True,True,0.0942387416,0.0942387416,,,1
+Gemini Pro,geometry,13_geometry_closest_pair_2d,mpi,,,,True,True,True,True,True,True,True,0.021433,0.0403336333333333,1.92658258357117,3.058181309196099,3
+Gemini Pro,geometry,13_geometry_closest_pair_2d,serial,,,,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+Gemini Pro,geometry,11_geometry_convex_hull_perimeter,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,geometry,11_geometry_convex_hull_perimeter,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,geometry,12_geometry_smallest_triangle,mpi,,,,True,True,True,True,True,True,True,0.0010439,0.0013617833333333,1.8289108152121851,1.6862000441598586,3
+Gemini Pro,geometry,12_geometry_smallest_triangle,serial,,,,True,True,True,True,True,True,True,4.12e-08,4.12e-08,,,1
+Gemini Pro,geometry,14_geometry_closest_pair_1d,mpi,,,,True,True,True,True,True,True,True,0.05193795,0.1054321166666666,1.9337819781507604,3.3549649148647567,3
+Gemini Pro,geometry,14_geometry_closest_pair_1d,serial,,,,True,True,True,True,True,True,True,0.0008233086,0.0008233086,,,1
+Gemini Pro,geometry,10_geometry_convex_hull,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,geometry,10_geometry_convex_hull,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,transform,59_transform_map_function,mpi,,,,True,True,True,True,True,True,True,0.0020236,0.0034560333333333,1.7338400550404611,2.61524016604072,3
+Gemini Pro,transform,59_transform_map_function,serial,,,,True,True,True,True,True,True,True,0.0045707918,0.0045707918,,,1
+Gemini Pro,transform,57_transform_inverse_offset,mpi,,,,True,True,True,True,True,True,True,0.002616,0.0060373333333333,0.4973667699678689,0.2555610914099821,3
+Gemini Pro,transform,57_transform_inverse_offset,serial,,,,True,True,True,True,True,True,True,0.0003832248,0.0003832248,,,1
+Gemini Pro,transform,55_transform_relu,mpi,,,,True,True,True,True,True,True,True,0.0187519,0.0207399,1.160565062740309,1.0026629808799816,3
+Gemini Pro,transform,55_transform_relu,serial,,,,True,True,True,True,True,True,True,0.018022067,0.018022067,,,1
+Gemini Pro,transform,56_transform_negate_odds,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,transform,56_transform_negate_odds,serial,,,,True,True,True,True,True,True,True,0.0025358252,0.0025358252,,,1
+Gemini Pro,transform,58_transform_squaring,mpi,,,,True,True,True,True,True,True,True,0.0003664,0.0006926333333333,0.4482505505260582,0.4097975617939828,3
+Gemini Pro,transform,58_transform_squaring,serial,,,,True,True,True,True,True,True,True,0.0003883084,0.0003883084,,,1
+Gemini Pro,reduce,26_reduce_product_of_inverses,mpi,,,,True,True,True,True,True,True,False,0.0111535,0.0140679,,,2
+Gemini Pro,reduce,26_reduce_product_of_inverses,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,reduce,27_reduce_average,mpi,,,,True,True,True,True,True,True,True,0.00577355,0.0104415833333333,2.0023500658018425,2.9515289553221153,3
+Gemini Pro,reduce,27_reduce_average,serial,,,,True,True,True,True,True,True,True,0.0166888998,0.0166888998,,,1
+Gemini Pro,reduce,28_reduce_smallest_odd_number,mpi,,,,True,True,True,True,True,True,True,0.01954355,0.0356480166666666,1.918028572477873,2.939517129692405,3
+Gemini Pro,reduce,28_reduce_smallest_odd_number,serial,,,,True,True,True,True,True,True,True,0.02228925,0.02228925,,,1
+Gemini Pro,reduce,25_reduce_xor,mpi,,,,True,True,True,True,True,True,True,0.0032591,0.0044784833333333,1.878555429413028,1.5102307625895732,3
+Gemini Pro,reduce,25_reduce_xor,serial,,,,True,True,True,True,True,True,True,0.0207285084,0.0207285084,,,1
+Gemini Pro,reduce,29_reduce_sum_of_min_of_pairs,mpi,,,,True,True,True,True,True,True,True,0.0096636,0.0152071999999999,1.8086013493936008,0.945737105257462,3
+Gemini Pro,reduce,29_reduce_sum_of_min_of_pairs,serial,,,,True,True,True,True,True,True,True,5e-08,5e-08,,,1
+Gemini Pro,dense_la,00_dense_la_lu_decomp,mpi,,,,True,True,True,True,True,True,True,0.0503951,0.0662578333333333,1.554399060725734,1.7916622846268784,3
+Gemini Pro,dense_la,00_dense_la_lu_decomp,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,dense_la,04_dense_la_gemv,mpi,,,,True,True,True,True,True,True,True,0.01151025,0.02120345,1.942860047786081,2.9883104189743928,3
+Gemini Pro,dense_la,04_dense_la_gemv,serial,,,,True,True,True,True,True,True,True,0.0341483002,0.0341483002,,,1
+Gemini Pro,dense_la,02_dense_la_gemm,mpi,,,,True,True,True,True,True,True,True,0.00662925,0.0095800166666666,1.6811369258379008,2.091337632462194,3
+Gemini Pro,dense_la,02_dense_la_gemm,serial,,,,True,True,True,True,True,True,True,0.0036800416,0.0036800416,,,1
+Gemini Pro,dense_la,01_dense_la_solve,mpi,,,,True,True,True,True,True,True,True,0.5008172,0.6279262666666666,0.9370828833319488,0.5902252254163373,3
+Gemini Pro,dense_la,01_dense_la_solve,serial,,,,True,True,True,True,True,True,True,0.107284,0.107284,,,1
+Gemini Pro,dense_la,03_dense_la_axpy,mpi,,,,True,True,True,True,True,True,True,0.0256113,0.0292046666666666,1.1795176445361522,1.3101560639249084,3
+Gemini Pro,dense_la,03_dense_la_axpy,serial,,,,True,True,True,True,True,True,True,0.0075474002,0.0075474002,,,1
+Gemini Pro,sort,41_sort_k-th_smallest_element,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,sort,41_sort_k-th_smallest_element,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,sort,43_sort_sort_an_array_of_structs_by_key,mpi,,,,True,True,True,True,True,True,False,0.0032376,0.0032376,,,1
+Gemini Pro,sort,43_sort_sort_an_array_of_structs_by_key,serial,,,,True,True,True,True,True,True,True,0.0027275666,0.0027275666,,,1
+Gemini Pro,sort,44_sort_sort_non-zero_elements,mpi,,,,True,True,True,True,True,True,True,0.0012795,0.0015499166666666,1.4213364595545137,1.172042664260626,3
+Gemini Pro,sort,44_sort_sort_non-zero_elements,serial,,,,True,True,True,True,True,True,True,0.0015037166,0.0015037166,,,1
+Gemini Pro,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,,,,True,True,True,True,True,True,True,0.0090942,0.0161190333333333,1.7975190418171845,2.774075784565987,3
+Gemini Pro,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,,,,True,True,True,True,True,True,True,0.0129601418,0.0129601418,,,1
+Gemini Pro,sort,42_sort_sorted_ranks,mpi,,,,True,True,True,True,True,True,True,1.9503041,3.5772072,1.8236447598106051,2.9079539954820377,3
+Gemini Pro,sort,42_sort_sorted_ranks,serial,,,,True,True,True,True,True,True,True,0.0123201,0.0123201,,,1
+Gemini Pro,sparse_la,46_sparse_la_spmm,mpi,,,,True,True,True,True,True,True,True,0.0057034,0.0061170666666666,0.9523602785245546,0.8564821071916625,3
+Gemini Pro,sparse_la,46_sparse_la_spmm,serial,,,,True,True,True,True,True,True,True,0.0053459252,0.0053459252,,,1
+Gemini Pro,sparse_la,47_sparse_la_spmv,mpi,,,,True,True,True,True,True,True,True,0.00059965,0.00105525,1.7500803772371665,2.7232552322187944,3
+Gemini Pro,sparse_la,47_sparse_la_spmv,serial,,,,True,True,True,True,True,True,True,0.0016478834,0.0016478834,,,1
+Gemini Pro,sparse_la,48_sparse_la_sparse_axpy,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Pro,sparse_la,48_sparse_la_sparse_axpy,serial,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Pro,sparse_la,45_sparse_la_sparse_solve,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,sparse_la,45_sparse_la_sparse_solve,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,sparse_la,49_sparse_la_sparse_lu_decomp,serial,,,,True,True,True,True,True,True,True,0.0513454168,0.0513454168,,,1
+Gemini Pro,stencil,50_stencil_xor_kernel,mpi,,,,True,True,True,True,True,True,True,0.01522215,0.0199216166666666,1.8372411508793387,1.8948308878837747,3
+Gemini Pro,stencil,50_stencil_xor_kernel,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,stencil,51_stencil_edge_kernel,mpi,,,,True,True,True,True,True,True,True,0.02208285,0.0317954166666666,1.7763705089650264,2.1238562957226987,3
+Gemini Pro,stencil,51_stencil_edge_kernel,serial,,,,True,True,True,True,True,True,True,0.0686516666,0.0686516666,,,1
+Gemini Pro,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,,,,True,True,True,True,True,True,True,0.02453655,0.0290215166666666,1.254366103748143,1.4179499562896984,3
+Gemini Pro,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0177516916,0.0177516916,,,1
+Gemini Pro,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,,,,True,True,True,True,True,True,True,0.018199,0.0227056833333333,1.5940436287708115,1.387503856170231,3
+Gemini Pro,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0056313168,0.0056313168,,,1
+Gemini Pro,stencil,54_stencil_game_of_life,mpi,,,,True,True,True,True,True,True,True,0.03369145,0.0587634499999999,1.8057780584889216,2.7240026772371033,3
+Gemini Pro,stencil,54_stencil_game_of_life,serial,,,,True,True,True,True,True,True,True,0.1585183586,0.1585183586,,,1
+Gemini Pro,histogram,20_histogram_pixel_histogram,mpi,,,,True,True,True,True,True,True,True,0.0011593,0.0014493,1.6448241539482416,1.7105149659277148,3
+Gemini Pro,histogram,20_histogram_pixel_histogram,serial,,,,True,True,True,True,True,True,True,0.0021586334,0.0021586334,,,1
+Gemini Pro,histogram,24_histogram_count_quartile,mpi,,,,True,True,True,True,True,True,True,0.03783565,0.07654425,1.939621889632235,3.3447713994605612,3
+Gemini Pro,histogram,24_histogram_count_quartile,serial,,,,True,True,True,True,True,True,True,0.0060469914,0.0060469914,,,1
+Gemini Pro,histogram,22_histogram_count_quadrants,mpi,,,,True,True,True,True,True,True,True,0.0115067,0.0233966999999999,1.9803051233088205,3.3887213536461367,3
+Gemini Pro,histogram,22_histogram_count_quadrants,serial,,,,True,True,True,True,True,True,True,0.0392034832,0.0392034832,,,1
+Gemini Pro,histogram,23_histogram_first_letter_counts,mpi,,,,True,True,True,True,True,True,True,0.0038516,0.0054415166666666,0.8756223429649669,0.4770226336811469,3
+Gemini Pro,histogram,23_histogram_first_letter_counts,serial,,,,True,True,True,True,True,True,True,0.0036839832,0.0036839832,,,1
+Gemini Pro,histogram,21_histogram_bin_0-100,mpi,,,,True,True,True,True,True,True,True,0.00182035,0.0031401166666666,2.0084712215976563,2.787266185074299,3
+Gemini Pro,histogram,21_histogram_bin_0-100,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,search,39_search_xor_contains,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,search,39_search_xor_contains,serial,,,,True,True,True,True,True,True,True,2.60168e-05,2.60168e-05,,,1
+Gemini Pro,search,37_search_find_the_closest_number_to_pi,mpi,,,,True,True,True,True,True,True,True,0.0007179,0.0009841833333333,1.3584064632957236,0.7743062447893921,3
+Gemini Pro,search,37_search_find_the_closest_number_to_pi,serial,,,,True,True,True,True,True,True,True,2.48e-08,2.48e-08,,,1
+Gemini Pro,search,38_search_find_the_first_even_number,mpi,,,,True,True,True,True,True,True,True,0.0002505,0.00031255,1.0714570858283432,0.640955223880597,3
+Gemini Pro,search,38_search_find_the_first_even_number,serial,,,,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Gemini Pro,search,35_search_search_for_last_struct_by_key,mpi,,,,True,True,True,True,True,True,True,0.0013458,0.0025808833333333,0.6484533102052618,0.3114232491409133,3
+Gemini Pro,search,35_search_search_for_last_struct_by_key,serial,,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemini Pro,search,36_search_check_if_array_contains_value,mpi,,,,True,True,True,True,True,True,True,0.0003018,0.0004590666666666,1.8436050364479784,1.0720616570327552,3
+Gemini Pro,search,36_search_check_if_array_contains_value,serial,,,,True,True,True,True,True,True,True,0.0007733918,0.0007733918,,,1
+Gemini Pro,fft,05_fft_inverse_fft,mpi,,,,True,True,True,True,True,True,True,0.0077706,0.0093020166666666,0.9496028351460344,0.6501261247693988,3
+Gemini Pro,fft,05_fft_inverse_fft,serial,,,,True,True,True,True,True,True,True,0.0071740336,0.0071740336,,,1
+Gemini Pro,fft,08_fft_split_fft,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Pro,fft,08_fft_split_fft,serial,,,,True,True,True,True,True,True,True,0.0055134584,0.0055134584,,,1
+Gemini Pro,fft,07_fft_fft_conjugate,mpi,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,fft,07_fft_fft_conjugate,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,fft,09_fft_fft_out_of_place,mpi,,,,True,True,True,False,False,False,False,,,,,0
+Gemini Pro,fft,09_fft_fft_out_of_place,serial,,,,True,True,True,True,True,True,True,0.0109386834,0.0109386834,,,1
+Gemini Pro,fft,06_fft_dft,mpi,,,,True,True,True,True,True,True,True,0.0201068,0.0450912666666666,1.4570113157310849,3.3965723038971887,3
+Gemini Pro,fft,06_fft_dft,serial,,,,True,True,True,True,True,False,False,,,,,0
+Gemini Pro,scan,33_scan_reverse_prefix_sum,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,scan,33_scan_reverse_prefix_sum,serial,,,,True,True,True,True,True,True,True,0.0030186166,0.0030186166,,,1
+Gemini Pro,scan,30_scan_prefix_sum,mpi,,,,True,True,True,True,True,True,True,0.0223341,0.0243144,1.2579508464634797,1.24790462780771,3
+Gemini Pro,scan,30_scan_prefix_sum,serial,,,,True,True,True,True,True,True,True,0.012877967,0.012877967,,,1
+Gemini Pro,scan,34_scan_largest_contiguous_subarray_sum,mpi,,,,True,True,True,True,True,True,True,5.08e-05,0.0001200333333333,1.0388925510876732,3.1023622047244097,3
+Gemini Pro,scan,34_scan_largest_contiguous_subarray_sum,serial,,,,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Gemini Pro,scan,32_scan_sum_of_prefix_sum_array,mpi,,,,True,True,True,True,True,True,True,0.0020102,0.0038315999999999,1.7804291744840524,3.021291413789672,3
+Gemini Pro,scan,32_scan_sum_of_prefix_sum_array,serial,,,,True,True,True,True,True,True,True,6.66e-08,6.66e-08,,,1
+Gemini Pro,scan,31_scan_scan_with_min_function,mpi,,,,True,True,True,True,True,True,True,0.0012325,0.0019763,1.550450743999131,2.3164300202839754,3
+Gemini Pro,scan,31_scan_scan_with_min_function,serial,,,,True,True,True,True,True,True,True,0.0087688668,0.0087688668,,,1
+Gemini Pro,graph,17_graph_highest_degree,mpi,,,,True,True,True,True,True,True,True,0.0022906,0.00249065,0.835375638220277,0.9390206407444606,3
+Gemini Pro,graph,17_graph_highest_degree,serial,,,,True,True,True,True,True,True,True,4.16e-08,4.16e-08,,,1
+Gemini Pro,graph,16_graph_largest_component,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,graph,16_graph_largest_component,serial,,,,True,True,True,True,True,True,True,0.1121536418,0.1121536418,,,1
+Gemini Pro,graph,19_graph_shortest_path,mpi,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,graph,19_graph_shortest_path,serial,,,,True,False,True,False,False,False,False,,,,,0
+Gemini Pro,graph,15_graph_edge_count,mpi,,,,True,True,True,True,True,True,True,0.001513,0.0028244333333333,0.6604165175695984,1.8297422339722405,3
+Gemini Pro,graph,15_graph_edge_count,serial,,,,True,True,True,True,True,True,True,0.0021549754,0.0021549754,,,1
+Gemini Pro,graph,18_graph_count_components,mpi,,,,True,True,True,True,True,True,True,0.0262111,0.0492362,1.7396078785077285,2.943371319784366,3
+Gemini Pro,graph,18_graph_count_components,serial,,,,True,True,True,True,True,True,True,0.089736675,0.089736675,,,1
+H2looP v0.1-multimodal,geometry,13_geometry_closest_pair_2d,mpi,12.24145793914795,1581.0,1321.0,True,True,True,True,True,True,True,0.2371048,0.2809910833333333,0.9102841211425045,0.6864742271205103,3
+H2looP v0.1-multimodal,geometry,13_geometry_closest_pair_2d,serial,7.955889940261841,1410.0,1276.0,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+H2looP v0.1-multimodal,geometry,11_geometry_convex_hull_perimeter,mpi,37.207160234451294,2188.0,1333.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,geometry,11_geometry_convex_hull_perimeter,serial,31.403347969055176,2000.0,1288.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,geometry,12_geometry_smallest_triangle,mpi,13.805914878845217,1589.0,1301.0,True,True,True,True,True,True,True,0.004071,0.0055543499999999,0.5801955362996324,0.7301652781389842,3
+H2looP v0.1-multimodal,geometry,12_geometry_smallest_triangle,serial,8.433601140975952,1437.0,1277.0,True,True,True,True,True,True,True,2.46e-08,2.46e-08,,,1
+H2looP v0.1-multimodal,geometry,14_geometry_closest_pair_1d,mpi,13.120519876480104,1501.0,1225.0,True,True,True,True,True,True,False,0.0510214,0.0510214,,,1
+H2looP v0.1-multimodal,geometry,14_geometry_closest_pair_1d,serial,6.996554136276245,1339.0,1202.0,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+H2looP v0.1-multimodal,geometry,10_geometry_convex_hull,mpi,28.29794216156006,1943.0,1304.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,geometry,10_geometry_convex_hull,serial,25.104021072387695,1786.0,1260.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,transform,59_transform_map_function,mpi,8.448905229568481,1452.0,1285.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,transform,59_transform_map_function,serial,4.929605007171631,1319.0,1238.0,True,True,True,True,True,True,True,0.0048403666,0.0048403666,,,1
+H2looP v0.1-multimodal,transform,57_transform_inverse_offset,mpi,8.907652854919434,1418.0,1245.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,transform,57_transform_inverse_offset,serial,5.73205304145813,1300.0,1200.0,True,True,True,True,True,True,True,0.00057045,0.00057045,,,1
+H2looP v0.1-multimodal,transform,55_transform_relu,mpi,12.72776699066162,1544.0,1274.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,transform,55_transform_relu,serial,4.252778053283691,1289.0,1229.0,True,True,True,True,True,True,True,0.020950875,0.020950875,,,1
+H2looP v0.1-multimodal,transform,56_transform_negate_odds,mpi,12.13129496574402,1507.0,1251.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,transform,56_transform_negate_odds,serial,4.531466960906982,1282.0,1206.0,True,True,True,True,True,True,True,0.0028294418,0.0028294418,,,1
+H2looP v0.1-multimodal,transform,58_transform_squaring,mpi,6.117470026016235,1340.0,1227.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,transform,58_transform_squaring,serial,3.833429098129273,1242.0,1182.0,True,True,True,True,True,True,True,0.0004004334,0.0004004334,,,1
+H2looP v0.1-multimodal,reduce,26_reduce_product_of_inverses,mpi,9.64905309677124,1445.0,1248.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,reduce,26_reduce_product_of_inverses,serial,6.633186101913452,1329.0,1205.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,reduce,27_reduce_average,mpi,7.363848924636841,1365.0,1233.0,True,True,True,True,True,True,False,0.0181936,0.0181936,,,1
+H2looP v0.1-multimodal,reduce,27_reduce_average,serial,4.050685167312622,1250.0,1191.0,True,True,True,True,True,True,True,0.0215998082,0.0215998082,,,1
+H2looP v0.1-multimodal,reduce,28_reduce_smallest_odd_number,mpi,8.060847759246826,1400.0,1246.0,True,True,True,True,True,True,True,0.0645932,0.0701462166666666,0.949503442679822,0.8300648765277019,3
+H2looP v0.1-multimodal,reduce,28_reduce_smallest_odd_number,serial,6.950705051422119,1336.0,1205.0,True,True,True,True,True,True,True,0.0315979,0.0315979,,,1
+H2looP v0.1-multimodal,reduce,25_reduce_xor,mpi,7.527899980545044,1352.0,1204.0,True,True,True,True,True,True,True,0.0260016,0.0297999833333333,0.9143805628721036,0.7437092504587116,3
+H2looP v0.1-multimodal,reduce,25_reduce_xor,serial,3.5347771644592285,1214.0,1163.0,True,True,True,True,True,True,True,0.0250621248,0.0250621248,,,1
+H2looP v0.1-multimodal,reduce,29_reduce_sum_of_min_of_pairs,mpi,7.275992155075073,1432.0,1290.0,True,True,True,True,True,True,False,0.0190532,0.0190532,,,1
+H2looP v0.1-multimodal,reduce,29_reduce_sum_of_min_of_pairs,serial,5.525740146636963,1338.0,1246.0,True,True,True,True,True,True,True,3.32e-08,3.32e-08,,,1
+H2looP v0.1-multimodal,dense_la,00_dense_la_lu_decomp,mpi,12.357012033462524,1532.0,1270.0,True,True,True,True,True,True,True,0.1016818,0.1277256166666666,0.7025722061883024,0.743466541490409,3
+H2looP v0.1-multimodal,dense_la,00_dense_la_lu_decomp,serial,6.584417819976807,1350.0,1225.0,True,True,True,True,True,True,True,0.1081606746,0.1081606746,,,1
+H2looP v0.1-multimodal,dense_la,04_dense_la_gemv,mpi,12.39129400253296,1553.0,1293.0,True,True,True,True,False,True,False,0.0380384,0.0380384,,,1
+H2looP v0.1-multimodal,dense_la,04_dense_la_gemv,serial,5.660978078842163,1349.0,1246.0,True,True,True,True,True,True,True,0.0368379834,0.0368379834,,,1
+H2looP v0.1-multimodal,dense_la,02_dense_la_gemm,mpi,11.202245235443115,1555.0,1324.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,dense_la,02_dense_la_gemm,serial,6.184010028839111,1393.0,1277.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,dense_la,01_dense_la_solve,mpi,25.015954971313477,1856.0,1288.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,dense_la,01_dense_la_solve,serial,21.303466081619263,1721.0,1241.0,True,True,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,dense_la,03_dense_la_axpy,mpi,9.397711038589478,1464.0,1273.0,True,True,True,True,True,True,False,0.00914,0.00914,,,1
+H2looP v0.1-multimodal,dense_la,03_dense_la_axpy,serial,5.0992419719696045,1309.0,1226.0,True,True,True,True,True,True,True,0.0083039502,0.0083039502,,,1
+H2looP v0.1-multimodal,sort,41_sort_k-th_smallest_element,mpi,14.846523761749268,1553.0,1232.0,True,True,True,True,False,False,False,,,,,0
+H2looP v0.1-multimodal,sort,41_sort_k-th_smallest_element,serial,5.136094331741333,1276.0,1189.0,True,True,True,True,True,True,True,0.0062933084,0.0062933084,,,1
+H2looP v0.1-multimodal,sort,43_sort_sort_an_array_of_structs_by_key,mpi,18.794407844543457,1719.0,1310.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sort,43_sort_sort_an_array_of_structs_by_key,serial,4.2108659744262695,1324.0,1265.0,True,True,True,True,True,True,True,0.0033439248,0.0033439248,,,1
+H2looP v0.1-multimodal,sort,44_sort_sort_non-zero_elements,mpi,14.633438110351562,1579.0,1262.0,True,True,True,True,False,True,False,0.0017082,0.0017082,,,1
+H2looP v0.1-multimodal,sort,44_sort_sort_non-zero_elements,serial,8.184622764587402,1380.0,1216.0,True,True,True,True,True,True,True,0.001701908,0.001701908,,,1
+H2looP v0.1-multimodal,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,24.09739375114441,1845.0,1304.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,4.474167108535767,1331.0,1259.0,True,True,True,True,True,True,True,0.027361475,0.027361475,,,1
+H2looP v0.1-multimodal,sort,42_sort_sorted_ranks,mpi,11.628272294998167,1553.0,1308.0,True,True,True,True,False,True,False,0.0166902,0.01764905,0.8969416215693334,,2
+H2looP v0.1-multimodal,sort,42_sort_sorted_ranks,serial,7.558708906173706,1412.0,1263.0,True,True,True,True,True,True,True,0.0103633668,0.0103633668,,,1
+H2looP v0.1-multimodal,sparse_la,46_sparse_la_spmm,mpi,9.808022022247314,1537.0,1338.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,46_sparse_la_spmm,serial,10.146798133850098,1500.0,1291.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,47_sparse_la_spmv,mpi,12.418656826019289,1606.0,1347.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,47_sparse_la_spmv,serial,8.37524700164795,1464.0,1298.0,True,True,True,True,True,True,True,0.0018850498,0.0018850498,,,1
+H2looP v0.1-multimodal,sparse_la,48_sparse_la_sparse_axpy,mpi,15.892621040344238,1690.0,1345.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,48_sparse_la_sparse_axpy,serial,12.531118154525757,1559.0,1298.0,True,True,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,45_sparse_la_sparse_solve,mpi,27.02132296562195,1914.0,1303.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,45_sparse_la_sparse_solve,serial,22.997201919555664,1777.0,1256.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,33.72423338890076,2123.0,1349.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,sparse_la,49_sparse_la_sparse_lu_decomp,serial,23.856977701187137,1844.0,1302.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,stencil,50_stencil_xor_kernel,mpi,16.439084768295288,1734.0,1376.0,True,True,True,True,True,True,True,0.0099172,0.0185203333333333,1.9836449209046936,3.0599161053523174,3
+H2looP v0.1-multimodal,stencil,50_stencil_xor_kernel,serial,12.80413293838501,1596.0,1330.0,True,True,True,True,True,True,True,0.0283444168,0.0283444168,,,1
+H2looP v0.1-multimodal,stencil,51_stencil_edge_kernel,mpi,15.23538303375244,1801.0,1485.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,stencil,51_stencil_edge_kernel,serial,13.544541120529177,1703.0,1437.0,True,True,True,True,True,True,True,0.0493946166,0.0493946166,,,1
+H2looP v0.1-multimodal,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,25.90344786643982,1988.0,1411.0,True,True,True,True,True,True,True,0.0269642,0.0614342166666666,0.405176921736099,0.2969977172407526,3
+H2looP v0.1-multimodal,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,11.819573879241943,1615.0,1365.0,True,True,True,True,True,True,True,0.0233507916,0.0233507916,,,1
+H2looP v0.1-multimodal,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,10.685871839523315,1543.0,1328.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,7.0093419551849365,1412.0,1282.0,True,True,True,True,True,True,True,0.0132207084,0.0132207084,,,1
+H2looP v0.1-multimodal,stencil,54_stencil_game_of_life,mpi,20.16063904762268,1938.0,1497.0,True,True,True,True,False,True,False,0.1546672,0.1546672,,,1
+H2looP v0.1-multimodal,stencil,54_stencil_game_of_life,serial,15.631223917007446,1791.0,1452.0,True,True,True,True,True,True,True,0.2674692418,0.2674692418,,,1
+H2looP v0.1-multimodal,histogram,20_histogram_pixel_histogram,mpi,8.696319103240967,1462.0,1296.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,histogram,20_histogram_pixel_histogram,serial,3.66312026977539,1303.0,1250.0,True,True,True,True,True,True,True,0.0021790666,0.0021790666,,,1
+H2looP v0.1-multimodal,histogram,24_histogram_count_quartile,mpi,15.32518219947815,1690.0,1361.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,histogram,24_histogram_count_quartile,serial,8.25576114654541,1478.0,1314.0,True,True,True,True,True,True,True,0.0447115416,0.0447115416,,,1
+H2looP v0.1-multimodal,histogram,22_histogram_count_quadrants,mpi,13.89162278175354,1617.0,1320.0,True,True,True,True,False,True,False,0.0417722,0.0417722,,,1
+H2looP v0.1-multimodal,histogram,22_histogram_count_quadrants,serial,7.35118293762207,1410.0,1274.0,True,True,True,True,True,True,True,0.04326395,0.04326395,,,1
+H2looP v0.1-multimodal,histogram,23_histogram_first_letter_counts,mpi,10.759035110473633,1560.0,1343.0,True,True,True,True,True,True,False,0.0040134,0.0040134,,,1
+H2looP v0.1-multimodal,histogram,23_histogram_first_letter_counts,serial,4.880325078964233,1376.0,1297.0,True,True,True,True,True,True,True,0.0038545918,0.0038545918,,,1
+H2looP v0.1-multimodal,histogram,21_histogram_bin_0-100,mpi,10.217154026031494,1531.0,1325.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,histogram,21_histogram_bin_0-100,serial,13.220882892608644,1557.0,1279.0,True,True,True,True,True,True,True,0.052284525,0.052284525,,,1
+H2looP v0.1-multimodal,search,39_search_xor_contains,mpi,11.452776908874512,1527.0,1293.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,search,39_search_xor_contains,serial,6.151303052902222,1346.0,1248.0,True,True,True,True,True,True,True,2.63832e-05,2.63832e-05,,,1
+H2looP v0.1-multimodal,search,37_search_find_the_closest_number_to_pi,mpi,12.274959802627563,1514.0,1255.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,search,37_search_find_the_closest_number_to_pi,serial,6.551685810089111,1336.0,1212.0,True,True,True,True,True,True,True,3.34e-08,3.34e-08,,,1
+H2looP v0.1-multimodal,search,38_search_find_the_first_even_number,mpi,9.655755043029783,1463.0,1266.0,True,True,True,True,True,True,True,0.000284,0.0004208499999999,0.7024486767252041,0.4945581192860253,3
+H2looP v0.1-multimodal,search,38_search_find_the_first_even_number,serial,4.8047521114349365,1299.0,1222.0,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+H2looP v0.1-multimodal,search,35_search_search_for_last_struct_by_key,mpi,9.644558906555176,1471.0,1281.0,True,True,True,True,True,True,True,0.0013082,0.0033464499999999,0.488863976083707,0.2160474967589572,3
+H2looP v0.1-multimodal,search,35_search_search_for_last_struct_by_key,serial,5.369260787963867,1332.0,1239.0,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+H2looP v0.1-multimodal,search,36_search_check_if_array_contains_value,mpi,7.731724977493286,1401.0,1255.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,search,36_search_check_if_array_contains_value,serial,3.849879264831543,1268.0,1212.0,True,True,True,True,True,True,True,0.0008023916,0.0008023916,,,1
+H2looP v0.1-multimodal,fft,05_fft_inverse_fft,mpi,6.213042974472046,1465.0,1359.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,05_fft_inverse_fft,serial,6.714699983596802,1441.0,1314.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,08_fft_split_fft,mpi,16.728036165237427,1707.0,1342.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,08_fft_split_fft,serial,21.533751964569092,1775.0,1297.0,True,True,True,True,True,True,True,0.05843395,0.05843395,,,1
+H2looP v0.1-multimodal,fft,07_fft_fft_conjugate,mpi,12.401039123535156,1574.0,1313.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,07_fft_fft_conjugate,serial,18.91008687019348,1675.0,1268.0,True,True,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,09_fft_fft_out_of_place,mpi,33.06233882904053,2057.0,1297.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,fft,09_fft_fft_out_of_place,serial,15.427454233169556,1608.0,1274.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,06_fft_dft,mpi,15.945990800857544,1567.0,1230.0,True,True,True,True,False,False,False,,,,,0
+H2looP v0.1-multimodal,fft,06_fft_dft,serial,8.186790943145752,1369.0,1207.0,True,True,True,True,True,True,True,0.0354691666,0.0354691666,,,1
+H2looP v0.1-multimodal,scan,33_scan_reverse_prefix_sum,mpi,10.62398386001587,1501.0,1286.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,scan,33_scan_reverse_prefix_sum,serial,5.506700754165649,1337.0,1241.0,True,True,True,True,True,False,False,,,,,0
+H2looP v0.1-multimodal,scan,30_scan_prefix_sum,mpi,17.975793838500977,1640.0,1244.0,True,True,True,True,False,True,False,0.0193214,0.0193214,,,1
+H2looP v0.1-multimodal,scan,30_scan_prefix_sum,serial,5.165558099746704,1288.0,1200.0,True,True,True,True,True,True,True,0.010237183,0.010237183,,,1
+H2looP v0.1-multimodal,scan,34_scan_largest_contiguous_subarray_sum,mpi,11.137945175170898,1516.0,1288.0,True,True,True,True,True,True,False,3.96e-05,3.96e-05,,,1
+H2looP v0.1-multimodal,scan,34_scan_largest_contiguous_subarray_sum,serial,6.41617488861084,1365.0,1245.0,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+H2looP v0.1-multimodal,scan,32_scan_sum_of_prefix_sum_array,mpi,10.962118864059448,1438.0,1217.0,True,True,True,True,True,True,False,0.012061,0.012061,,,1
+H2looP v0.1-multimodal,scan,32_scan_sum_of_prefix_sum_array,serial,6.772366046905518,1302.0,1175.0,True,True,True,True,True,True,True,0.0120598832,0.0120598832,,,1
+H2looP v0.1-multimodal,scan,31_scan_scan_with_min_function,mpi,10.690993070602415,1522.0,1302.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,scan,31_scan_scan_with_min_function,serial,5.150678873062134,1345.0,1257.0,True,True,True,True,True,True,True,0.0061539248,0.0061539248,,,1
+H2looP v0.1-multimodal,graph,17_graph_highest_degree,mpi,10.558876037597656,1490.0,1278.0,True,True,True,True,True,True,True,0.001389,0.0031599166666666,0.4218038262982083,0.2895107081444427,3
+H2looP v0.1-multimodal,graph,17_graph_highest_degree,serial,7.197265863418579,1371.0,1234.0,True,True,True,True,True,True,True,3.32e-08,3.32e-08,,,1
+H2looP v0.1-multimodal,graph,16_graph_largest_component,mpi,15.54875373840332,1613.0,1278.0,True,True,True,True,True,True,True,0.0720194,0.07998725,0.934262501151298,0.7926811214957384,3
+H2looP v0.1-multimodal,graph,16_graph_largest_component,serial,11.68795895576477,1479.0,1234.0,True,True,True,True,True,True,True,0.0744552584,0.0744552584,,,1
+H2looP v0.1-multimodal,graph,19_graph_shortest_path,mpi,14.473672866821287,1610.0,1296.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,graph,19_graph_shortest_path,serial,9.862770795822144,1444.0,1250.0,True,False,True,False,False,False,False,,,,,0
+H2looP v0.1-multimodal,graph,15_graph_edge_count,mpi,9.613332033157349,1463.0,1274.0,True,True,True,True,True,True,False,0.0664268,0.0664268,,,1
+H2looP v0.1-multimodal,graph,15_graph_edge_count,serial,5.2960288524627686,1316.0,1230.0,True,True,True,True,True,True,True,4.18e-08,4.18e-08,,,1
+H2looP v0.1-multimodal,graph,18_graph_count_components,mpi,14.16804814338684,1575.0,1276.0,True,True,True,True,True,True,False,0.0765564,0.0765564,,,1
+H2looP v0.1-multimodal,graph,18_graph_count_components,serial,10.867100238800049,1449.0,1231.0,True,True,True,True,True,True,True,0.07367375,0.07367375,,,1
+Gemma3,geometry,13_geometry_closest_pair_2d,mpi,13.699808835983276,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,geometry,13_geometry_closest_pair_2d,serial,6.023669004440308,,,True,True,True,True,True,True,True,4.18e-08,4.18e-08,,,1
+Gemma3,geometry,11_geometry_convex_hull_perimeter,mpi,26.62573003768921,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,geometry,11_geometry_convex_hull_perimeter,serial,36.66801691055298,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,geometry,12_geometry_smallest_triangle,mpi,16.657769918441772,,,True,True,True,True,True,True,True,0.0018185,0.0023655333333333,1.3727129692065634,1.6791861424250756,3
+Gemma3,geometry,12_geometry_smallest_triangle,serial,8.929616212844849,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemma3,geometry,14_geometry_closest_pair_1d,mpi,9.295701026916504,,,True,True,True,True,True,True,False,0.0456758,0.0456758,,,1
+Gemma3,geometry,14_geometry_closest_pair_1d,serial,4.781188011169434,,,True,True,True,True,True,True,True,5e-08,5e-08,,,1
+Gemma3,geometry,10_geometry_convex_hull,mpi,39.3166937828064,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,geometry,10_geometry_convex_hull,serial,17.68888020515442,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,transform,59_transform_map_function,mpi,6.352082252502441,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,transform,59_transform_map_function,serial,12.296853065490724,,,True,True,True,True,True,True,True,0.005308975,0.005308975,,,1
+Gemma3,transform,57_transform_inverse_offset,mpi,5.718739032745361,,,True,True,True,True,True,True,True,0.00014615,0.0003458166666666,1.979939819458375,4.052001368457065,3
+Gemma3,transform,57_transform_inverse_offset,serial,4.308216094970703,,,True,True,True,True,True,True,True,0.0005270252,0.0005270252,,,1
+Gemma3,transform,55_transform_relu,mpi,8.308688163757324,,,True,True,True,True,False,True,False,0.022327,0.022327,,,1
+Gemma3,transform,55_transform_relu,serial,2.1919970512390137,,,True,True,True,True,True,True,True,0.0186520002,0.0186520002,,,1
+Gemma3,transform,56_transform_negate_odds,mpi,7.752763032913208,,,True,True,True,True,False,True,False,0.0074154,0.0074154,,,1
+Gemma3,transform,56_transform_negate_odds,serial,3.517190933227539,,,True,True,True,True,True,True,True,0.0026030332,0.0026030332,,,1
+Gemma3,transform,58_transform_squaring,mpi,4.215320825576782,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,transform,58_transform_squaring,serial,2.252187013626098,,,True,True,True,True,True,True,True,0.00078585,0.00078585,,,1
+Gemma3,reduce,26_reduce_product_of_inverses,mpi,6.676949977874756,,,True,True,True,True,True,True,False,0.0129188,0.0129188,,,1
+Gemma3,reduce,26_reduce_product_of_inverses,serial,5.08436393737793,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,reduce,27_reduce_average,mpi,4.028374910354614,,,True,True,True,True,True,True,True,0.017534,0.0223877666666666,0.8598343492396641,0.5997195334678661,3
+Gemma3,reduce,27_reduce_average,serial,2.210131883621216,,,True,True,True,True,True,True,True,0.021387925,0.021387925,,,1
+Gemma3,reduce,28_reduce_smallest_odd_number,mpi,30.49078893661499,,,True,True,True,True,True,True,True,0.061108,0.0715562,0.888711783851705,0.7206098084442999,3
+Gemma3,reduce,28_reduce_smallest_odd_number,serial,16.645597219467163,,,True,True,True,True,True,True,True,0.0249891832,0.0249891832,,,1
+Gemma3,reduce,25_reduce_xor,mpi,7.40852689743042,,,True,True,True,True,True,True,True,0.0508028,0.0611080333333333,0.9014621335793882,0.6670071541765081,3
+Gemma3,reduce,25_reduce_xor,serial,3.6177492141723633,,,True,True,True,True,True,True,True,0.0057122166,0.0057122166,,,1
+Gemma3,reduce,29_reduce_sum_of_min_of_pairs,mpi,5.5835747718811035,,,True,True,True,True,True,True,False,0.0213496,0.0213496,,,1
+Gemma3,reduce,29_reduce_sum_of_min_of_pairs,serial,15.584511041641235,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemma3,dense_la,00_dense_la_lu_decomp,mpi,17.01391911506653,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,dense_la,00_dense_la_lu_decomp,serial,4.577177047729492,,,True,True,True,True,True,True,True,0.137838708,0.137838708,,,1
+Gemma3,dense_la,04_dense_la_gemv,mpi,14.534742832183838,,,True,True,True,True,False,True,False,0.0334432,0.0334432,,,1
+Gemma3,dense_la,04_dense_la_gemv,serial,3.5884788036346436,,,True,True,True,True,True,True,True,0.0379615666,0.0379615666,,,1
+Gemma3,dense_la,02_dense_la_gemm,mpi,7.589952707290649,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,dense_la,02_dense_la_gemm,serial,6.648977041244507,,,True,True,True,True,True,True,True,0.0192076834,0.0192076834,,,1
+Gemma3,dense_la,01_dense_la_solve,mpi,17.89337706565857,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,dense_la,01_dense_la_solve,serial,16.358059883117676,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,dense_la,03_dense_la_axpy,mpi,5.638598918914795,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,dense_la,03_dense_la_axpy,serial,2.804654121398926,,,True,True,True,True,True,True,True,0.0092521332,0.0092521332,,,1
+Gemma3,sort,41_sort_k-th_smallest_element,mpi,11.43567705154419,,,True,True,True,True,True,True,True,0.0057166,0.0064486833333333,0.8742582736893619,0.8062166374027768,3
+Gemma3,sort,41_sort_k-th_smallest_element,serial,11.211189031600952,,,True,True,True,True,True,True,True,0.0059002832,0.0059002832,,,1
+Gemma3,sort,43_sort_sort_an_array_of_structs_by_key,mpi,19.76718282699585,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,sort,43_sort_sort_an_array_of_structs_by_key,serial,2.3710460662841797,,,True,True,True,True,True,True,True,0.0029965332,0.0029965332,,,1
+Gemma3,sort,44_sort_sort_non-zero_elements,mpi,8.70377779006958,,,True,True,True,True,True,True,True,0.0017678,0.0018857833333333,1.07229324584229,0.95067579427769,3
+Gemma3,sort,44_sort_sort_non-zero_elements,serial,6.852156162261963,,,True,True,True,True,True,True,True,0.001677575,0.001677575,,,1
+Gemma3,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,13.232681035995483,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,2.9429891109466553,,,True,True,True,True,True,True,True,0.0247694334,0.0247694334,,,1
+Gemma3,sort,42_sort_sorted_ranks,mpi,12.933998823165894,,,True,True,True,True,False,True,False,3.1955604,3.84535125,,0.710891964905848,2
+Gemma3,sort,42_sort_sorted_ranks,serial,8.287056922912598,,,True,True,True,True,True,True,True,0.0100493914,0.0100493914,,,1
+Gemma3,sparse_la,46_sparse_la_spmm,mpi,7.505957126617432,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,sparse_la,46_sparse_la_spmm,serial,7.968918085098267,,,True,True,True,True,True,True,True,0.014500058,0.014500058,,,1
+Gemma3,sparse_la,47_sparse_la_spmv,mpi,8.892729043960571,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,sparse_la,47_sparse_la_spmv,serial,5.274364233016968,,,True,True,True,True,True,True,True,0.0018575248,0.0018575248,,,1
+Gemma3,sparse_la,48_sparse_la_sparse_axpy,mpi,13.563437223434448,,,True,True,True,False,False,False,False,,,,,0
+Gemma3,sparse_la,48_sparse_la_sparse_axpy,serial,4.057348012924194,,,True,True,True,False,False,False,False,,,,,0
+Gemma3,sparse_la,45_sparse_la_sparse_solve,mpi,12.3308527469635,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,sparse_la,45_sparse_la_sparse_solve,serial,23.785068035125732,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,34.18813896179199,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,sparse_la,49_sparse_la_sparse_lu_decomp,serial,8.641755104064941,,,True,True,True,True,True,True,True,0.0147649916,0.0147649916,,,1
+Gemma3,stencil,50_stencil_xor_kernel,mpi,12.444883108139038,,,True,True,True,True,False,True,False,0.0539864,0.0539864,,,1
+Gemma3,stencil,50_stencil_xor_kernel,serial,6.637108087539673,,,True,True,True,True,True,True,True,0.0319695916,0.0319695916,,,1
+Gemma3,stencil,51_stencil_edge_kernel,mpi,11.148913860321043,,,True,True,True,True,True,True,False,0.064912,0.064912,,,1
+Gemma3,stencil,51_stencil_edge_kernel,serial,12.168757677078249,,,True,True,True,True,True,True,True,0.0517233002,0.0517233002,,,1
+Gemma3,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,13.007302045822144,,,True,True,True,True,True,True,False,0.0398714,0.0398714,,,1
+Gemma3,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,8.982941150665283,,,True,True,True,True,True,True,True,0.0251068334,0.0251068334,,,1
+Gemma3,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,8.313849687576294,,,True,True,True,True,False,True,False,0.0331642,0.0331642,,,1
+Gemma3,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,5.999368190765381,,,True,True,True,True,True,True,True,0.0134344496,0.0134344496,,,1
+Gemma3,stencil,54_stencil_game_of_life,mpi,13.716737031936646,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,stencil,54_stencil_game_of_life,serial,10.214251041412354,,,True,True,True,True,True,True,True,0.2859768584,0.2859768584,,,1
+Gemma3,histogram,20_histogram_pixel_histogram,mpi,5.419660806655884,,,True,True,True,True,True,True,False,0.0018792,0.0018792,,,1
+Gemma3,histogram,20_histogram_pixel_histogram,serial,2.130958795547486,,,True,True,True,True,True,True,True,0.0022433668,0.0022433668,,,1
+Gemma3,histogram,24_histogram_count_quartile,mpi,11.358797788619995,,,True,True,True,True,True,True,False,0.0468272,0.0468272,,,1
+Gemma3,histogram,24_histogram_count_quartile,serial,6.254722833633423,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,histogram,22_histogram_count_quadrants,mpi,12.150284051895142,,,True,True,True,True,True,True,False,0.0445746,0.0445746,,,1
+Gemma3,histogram,22_histogram_count_quadrants,serial,4.595545053482056,,,True,True,True,True,True,True,True,0.0434177168,0.0434177168,,,1
+Gemma3,histogram,23_histogram_first_letter_counts,mpi,6.9520628452301025,,,True,True,True,True,True,True,False,0.0049438,0.0049438,,,1
+Gemma3,histogram,23_histogram_first_letter_counts,serial,2.955044746398926,,,True,True,True,True,True,True,True,0.0050033918,0.0050033918,,,1
+Gemma3,histogram,21_histogram_bin_0-100,mpi,7.009816646575928,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,histogram,21_histogram_bin_0-100,serial,7.936907052993774,,,True,True,True,True,True,True,True,0.0584673082,0.0584673082,,,1
+Gemma3,search,39_search_xor_contains,mpi,6.607026100158691,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,search,39_search_xor_contains,serial,3.5884690284729004,,,True,True,True,True,True,True,True,2.59584e-05,2.59584e-05,,,1
+Gemma3,search,37_search_find_the_closest_number_to_pi,mpi,14.529202938079834,,,True,True,True,True,False,True,False,0.000982,0.000982,,,1
+Gemma3,search,37_search_find_the_closest_number_to_pi,serial,8.333039999008179,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemma3,search,38_search_find_the_first_even_number,mpi,7.211315870285034,,,True,True,True,True,True,True,True,0.0002886,0.0003604166666666,0.9543650793650796,0.5886792452830188,3
+Gemma3,search,38_search_find_the_first_even_number,serial,3.661997079849243,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Gemma3,search,35_search_search_for_last_struct_by_key,mpi,6.5795981884002686,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,search,35_search_search_for_last_struct_by_key,serial,2.916270017623902,,,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+Gemma3,search,36_search_check_if_array_contains_value,mpi,6.138994932174683,,,True,True,True,True,True,True,True,0.0006844,0.0008826666666666,1.086499123319696,0.6095081967213115,3
+Gemma3,search,36_search_check_if_array_contains_value,serial,1.9329779148101809,,,True,True,True,True,True,True,True,0.0008197002,0.0008197002,,,1
+Gemma3,fft,05_fft_inverse_fft,mpi,6.1152801513671875,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,fft,05_fft_inverse_fft,serial,4.007050037384033,,,True,True,True,True,True,True,True,0.0084633414,0.0084633414,,,1
+Gemma3,fft,08_fft_split_fft,mpi,14.397175073623655,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,fft,08_fft_split_fft,serial,6.949623107910156,,,True,True,True,False,False,False,False,,,,,0
+Gemma3,fft,07_fft_fft_conjugate,mpi,8.809937238693237,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,fft,07_fft_fft_conjugate,serial,21.398736000061035,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,fft,09_fft_fft_out_of_place,mpi,29.893335103988647,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,fft,09_fft_fft_out_of_place,serial,9.387403964996338,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,fft,06_fft_dft,mpi,14.525257110595703,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,fft,06_fft_dft,serial,6.899143934249878,,,True,True,True,True,True,True,True,0.0323922082,0.0323922082,,,1
+Gemma3,scan,33_scan_reverse_prefix_sum,mpi,5.969344854354858,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,scan,33_scan_reverse_prefix_sum,serial,4.080526113510132,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,scan,30_scan_prefix_sum,mpi,14.452385663986206,,,True,True,True,True,True,True,False,0.0315464,0.0315464,,,1
+Gemma3,scan,30_scan_prefix_sum,serial,3.135581970214844,,,True,True,True,True,True,True,True,0.0112507748,0.0112507748,,,1
+Gemma3,scan,34_scan_largest_contiguous_subarray_sum,mpi,8.800436019897461,,,True,True,True,True,True,True,True,3.82e-05,9.905e-05,0.387031408308004,0.238377535101404,3
+Gemma3,scan,34_scan_largest_contiguous_subarray_sum,serial,5.405951976776123,,,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+Gemma3,scan,32_scan_sum_of_prefix_sum_array,mpi,10.844653844833374,,,True,True,True,True,True,True,True,0.0126237,0.0154690166666666,1.0822817399019304,0.6790136648617486,3
+Gemma3,scan,32_scan_sum_of_prefix_sum_array,serial,4.18647027015686,,,True,True,True,True,True,True,True,0.0125329504,0.0125329504,,,1
+Gemma3,scan,31_scan_scan_with_min_function,mpi,13.09657073020935,,,True,True,True,False,False,False,False,,,,,0
+Gemma3,scan,31_scan_scan_with_min_function,serial,12.894820213317873,,,True,True,True,True,True,True,True,0.0096595414,0.0096595414,,,1
+Gemma3,graph,17_graph_highest_degree,mpi,6.545828104019165,,,True,True,True,True,True,True,True,0.003064,0.0077932499999999,0.5675125023152435,0.2054066737057334,3
+Gemma3,graph,17_graph_highest_degree,serial,3.8359529972076416,,,True,True,True,True,True,True,True,9.16e-08,9.16e-08,,,1
+Gemma3,graph,16_graph_largest_component,mpi,12.27052116394043,,,True,True,True,True,True,True,True,0.181528,0.2066026333333333,0.907763909773684,0.7617394690550684,3
+Gemma3,graph,16_graph_largest_component,serial,6.573080778121948,,,True,True,True,True,True,False,False,,,,,0
+Gemma3,graph,19_graph_shortest_path,mpi,14.759080171585085,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,graph,19_graph_shortest_path,serial,7.237496852874756,,,True,False,True,False,False,False,False,,,,,0
+Gemma3,graph,15_graph_edge_count,mpi,5.7874908447265625,,,True,True,True,True,True,True,False,0.125465,0.125465,,,1
+Gemma3,graph,15_graph_edge_count,serial,3.0856258869171143,,,True,True,True,True,True,True,True,9.18e-08,9.18e-08,,,1
+Gemma3,graph,18_graph_count_components,mpi,11.574527025222778,,,True,True,True,True,True,True,False,0.1458378,0.1458378,,,1
+Gemma3,graph,18_graph_count_components,serial,6.15374493598938,,,True,True,True,True,True,True,True,0.1606959166,0.1606959166,,,1
+H2LooP v0.1-coder,geometry,13_geometry_closest_pair_2d,mpi,,,,True,True,True,True,True,True,True,0.05793925,0.1302400833333333,1.9209558952609,3.777270157967181,3
+H2LooP v0.1-coder,geometry,13_geometry_closest_pair_2d,serial,,,,True,True,True,True,True,True,True,6.68e-08,6.68e-08,,,1
+H2LooP v0.1-coder,geometry,11_geometry_convex_hull_perimeter,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,geometry,11_geometry_convex_hull_perimeter,serial,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,geometry,12_geometry_smallest_triangle,mpi,,,,True,True,True,True,True,True,True,0.00049455,0.00112065,1.8992922143579372,3.7982003841876457,3
+H2LooP v0.1-coder,geometry,12_geometry_smallest_triangle,serial,,,,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+H2LooP v0.1-coder,geometry,14_geometry_closest_pair_1d,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,geometry,14_geometry_closest_pair_1d,serial,,,,True,True,True,True,True,True,True,0.0021904166,0.0021904166,,,1
+H2LooP v0.1-coder,geometry,10_geometry_convex_hull,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,geometry,10_geometry_convex_hull,serial,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,transform,59_transform_map_function,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,transform,59_transform_map_function,serial,,,,True,True,True,True,True,True,True,0.0053025834,0.0053025834,,,1
+H2LooP v0.1-coder,transform,57_transform_inverse_offset,mpi,,,,True,True,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,transform,57_transform_inverse_offset,serial,,,,True,True,True,True,True,True,True,0.0006807498,0.0006807498,,,1
+H2LooP v0.1-coder,transform,55_transform_relu,mpi,,,,True,True,True,True,True,True,False,0.018513,0.018513,,,1
+H2LooP v0.1-coder,transform,55_transform_relu,serial,,,,True,True,True,True,True,True,True,0.0183869252,0.0183869252,,,1
+H2LooP v0.1-coder,transform,56_transform_negate_odds,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,transform,56_transform_negate_odds,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,transform,58_transform_squaring,mpi,,,,True,True,True,True,True,True,False,0.0041334,0.0041334,,,1
+H2LooP v0.1-coder,transform,58_transform_squaring,serial,,,,True,True,True,True,True,True,True,0.0004378,0.0004378,,,1
+H2LooP v0.1-coder,reduce,26_reduce_product_of_inverses,mpi,,,,True,True,True,True,True,True,True,0.005127,0.0073479,1.985493178970404,2.19434367076263,3
+H2LooP v0.1-coder,reduce,26_reduce_product_of_inverses,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,reduce,27_reduce_average,mpi,,,,True,True,True,True,True,True,False,0.0158444,0.0158444,,,1
+H2LooP v0.1-coder,reduce,27_reduce_average,serial,,,,True,True,True,True,True,True,True,0.0160540168,0.0160540168,,,1
+H2LooP v0.1-coder,reduce,28_reduce_smallest_odd_number,mpi,,,,True,True,True,True,True,True,True,0.0149251,0.0330525666666666,1.9199575695388111,3.71088970928168,3
+H2LooP v0.1-coder,reduce,28_reduce_smallest_odd_number,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,reduce,25_reduce_xor,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,reduce,25_reduce_xor,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,reduce,29_reduce_sum_of_min_of_pairs,mpi,,,,True,True,True,True,True,True,True,0.0093356,0.0146287166666666,1.70204378936544,0.8514893400389584,3
+H2LooP v0.1-coder,reduce,29_reduce_sum_of_min_of_pairs,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,00_dense_la_lu_decomp,mpi,,,,True,True,True,True,False,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,00_dense_la_lu_decomp,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,04_dense_la_gemv,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,04_dense_la_gemv,serial,,,,True,True,True,True,True,True,True,0.0317159002,0.0317159002,,,1
+H2LooP v0.1-coder,dense_la,02_dense_la_gemm,mpi,,,,True,True,True,True,True,True,True,0.00569745,0.0104605166666666,1.7023662973601423,2.8398318546016204,3
+H2LooP v0.1-coder,dense_la,02_dense_la_gemm,serial,,,,True,True,True,True,True,True,True,0.01324265,0.01324265,,,1
+H2LooP v0.1-coder,dense_la,01_dense_la_solve,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,01_dense_la_solve,serial,,,,True,True,True,True,True,True,True,0.0851292584,0.0851292584,,,1
+H2LooP v0.1-coder,dense_la,03_dense_la_axpy,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,dense_la,03_dense_la_axpy,serial,,,,True,True,True,True,True,True,True,0.0137744084,0.0137744084,,,1
+H2LooP v0.1-coder,sort,41_sort_k-th_smallest_element,mpi,,,,True,True,True,True,True,True,False,0.009038,0.009038,,,1
+H2LooP v0.1-coder,sort,41_sort_k-th_smallest_element,serial,,,,True,True,True,True,True,True,True,0.0019360832,0.0019360832,,,1
+H2LooP v0.1-coder,sort,43_sort_sort_an_array_of_structs_by_key,mpi,,,,True,True,True,True,True,True,True,0.0027471,0.0032898666666666,1.5693640566415492,1.5335254152883009,3
+H2LooP v0.1-coder,sort,43_sort_sort_an_array_of_structs_by_key,serial,,,,True,True,True,True,True,True,True,0.0050896914,0.0050896914,,,1
+H2LooP v0.1-coder,sort,44_sort_sort_non-zero_elements,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sort,44_sort_sort_non-zero_elements,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,,,,True,True,True,True,True,True,True,0.0283118416,0.0283118416,,,1
+H2LooP v0.1-coder,sort,42_sort_sorted_ranks,mpi,,,,True,True,True,True,False,False,False,,,,,0
+H2LooP v0.1-coder,sort,42_sort_sorted_ranks,serial,,,,True,True,True,True,True,True,True,0.0087278502,0.0087278502,,,1
+H2LooP v0.1-coder,sparse_la,46_sparse_la_spmm,mpi,,,,True,True,True,True,True,True,False,0.0130668,0.0130668,,,1
+H2LooP v0.1-coder,sparse_la,46_sparse_la_spmm,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,47_sparse_la_spmv,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,47_sparse_la_spmv,serial,,,,True,True,True,True,True,True,True,0.0015215918,0.0015215918,,,1
+H2LooP v0.1-coder,sparse_la,48_sparse_la_sparse_axpy,mpi,,,,True,True,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,48_sparse_la_sparse_axpy,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,45_sparse_la_sparse_solve,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,45_sparse_la_sparse_solve,serial,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,sparse_la,49_sparse_la_sparse_lu_decomp,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,stencil,50_stencil_xor_kernel,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,stencil,50_stencil_xor_kernel,serial,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,stencil,51_stencil_edge_kernel,mpi,,,,True,True,True,True,True,True,True,0.0539952,0.0660491333333333,1.4935883189616854,1.2699132045047996,3
+H2LooP v0.1-coder,stencil,51_stencil_edge_kernel,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,,,,True,True,True,True,True,True,True,0.0128637,0.0150326333333333,1.0554379431719634,1.28670600216112,3
+H2LooP v0.1-coder,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0175029832,0.0175029832,,,1
+H2LooP v0.1-coder,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,,,,True,True,True,True,False,True,False,0.0116156,0.0116156,,,1
+H2LooP v0.1-coder,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,,,,True,True,True,True,True,True,True,0.0117726998,0.0117726998,,,1
+H2LooP v0.1-coder,stencil,54_stencil_game_of_life,mpi,,,,True,True,True,True,False,False,False,,,,,0
+H2LooP v0.1-coder,stencil,54_stencil_game_of_life,serial,,,,True,True,True,True,True,True,True,0.1494005584,0.1494005584,,,1
+H2LooP v0.1-coder,histogram,20_histogram_pixel_histogram,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,20_histogram_pixel_histogram,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,24_histogram_count_quartile,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,24_histogram_count_quartile,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,22_histogram_count_quadrants,mpi,,,,True,True,True,True,True,True,True,0.0123558,0.0243475333333333,1.873945122702001,3.2025931141650075,3
+H2LooP v0.1-coder,histogram,22_histogram_count_quadrants,serial,,,,True,True,True,True,True,True,True,0.0406787078,0.0406787078,,,1
+H2LooP v0.1-coder,histogram,23_histogram_first_letter_counts,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,23_histogram_first_letter_counts,serial,,,,True,True,True,True,True,True,True,0.003106858,0.003106858,,,1
+H2LooP v0.1-coder,histogram,21_histogram_bin_0-100,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,histogram,21_histogram_bin_0-100,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,search,39_search_xor_contains,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,search,39_search_xor_contains,serial,,,,True,True,True,True,True,True,True,2.49498e-05,2.49498e-05,,,1
+H2LooP v0.1-coder,search,37_search_find_the_closest_number_to_pi,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,search,37_search_find_the_closest_number_to_pi,serial,,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+H2LooP v0.1-coder,search,38_search_find_the_first_even_number,mpi,,,,True,True,True,True,True,True,True,0.0002696,0.0003421333333333,0.9886321965529884,0.5569097293947531,3
+H2LooP v0.1-coder,search,38_search_find_the_first_even_number,serial,,,,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+H2LooP v0.1-coder,search,35_search_search_for_last_struct_by_key,mpi,,,,True,True,True,True,True,True,True,0.0014368,0.0031068166666666,0.5556500889473277,0.2712043564842342,3
+H2LooP v0.1-coder,search,35_search_search_for_last_struct_by_key,serial,,,,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+H2LooP v0.1-coder,search,36_search_check_if_array_contains_value,mpi,,,,True,True,True,True,True,True,True,0.0003055,0.0004764833333333,1.9764320785597385,1.1608189945208114,3
+H2LooP v0.1-coder,search,36_search_check_if_array_contains_value,serial,,,,True,True,True,True,True,True,True,0.0008194752,0.0008194752,,,1
+H2LooP v0.1-coder,fft,05_fft_inverse_fft,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,fft,05_fft_inverse_fft,serial,,,,True,True,True,True,True,True,True,0.007299925,0.007299925,,,1
+H2LooP v0.1-coder,fft,08_fft_split_fft,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,fft,08_fft_split_fft,serial,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,fft,07_fft_fft_conjugate,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,fft,07_fft_fft_conjugate,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,fft,09_fft_fft_out_of_place,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,fft,09_fft_fft_out_of_place,serial,,,,True,True,True,True,True,True,True,0.0410967584,0.0410967584,,,1
+H2LooP v0.1-coder,fft,06_fft_dft,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,fft,06_fft_dft,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,33_scan_reverse_prefix_sum,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,33_scan_reverse_prefix_sum,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,30_scan_prefix_sum,mpi,,,,True,True,True,True,True,True,True,0.0260202,0.08494605,0.5173228252527944,0.1457549749986206,3
+H2LooP v0.1-coder,scan,30_scan_prefix_sum,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,34_scan_largest_contiguous_subarray_sum,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,34_scan_largest_contiguous_subarray_sum,serial,,,,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+H2LooP v0.1-coder,scan,32_scan_sum_of_prefix_sum_array,mpi,,,,True,True,True,True,True,False,False,,,,,0
+H2LooP v0.1-coder,scan,32_scan_sum_of_prefix_sum_array,serial,,,,True,True,True,True,True,True,True,0.0048463418,0.0048463418,,,1
+H2LooP v0.1-coder,scan,31_scan_scan_with_min_function,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,scan,31_scan_scan_with_min_function,serial,,,,True,True,True,True,True,True,True,0.0082238916,0.0082238916,,,1
+H2LooP v0.1-coder,graph,17_graph_highest_degree,mpi,,,,True,True,True,True,True,True,True,0.0021618,0.00242415,0.7819858925664678,0.921424461351576,3
+H2LooP v0.1-coder,graph,17_graph_highest_degree,serial,,,,True,True,True,True,True,True,True,8.32e-08,8.32e-08,,,1
+H2LooP v0.1-coder,graph,16_graph_largest_component,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,graph,16_graph_largest_component,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,graph,19_graph_shortest_path,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,graph,19_graph_shortest_path,serial,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,graph,15_graph_edge_count,mpi,,,,True,True,True,True,True,True,True,0.02077515,0.0490844166666666,1.2346309393612265,3.363585822485036,3
+H2LooP v0.1-coder,graph,15_graph_edge_count,serial,,,,True,True,True,True,True,True,True,3.34e-08,3.34e-08,,,1
+H2LooP v0.1-coder,graph,18_graph_count_components,mpi,,,,True,False,True,False,False,False,False,,,,,0
+H2LooP v0.1-coder,graph,18_graph_count_components,serial,,,,True,True,True,True,True,True,True,0.0832643082,0.0832643082,,,1
+Kimi K2,geometry,13_geometry_closest_pair_2d,mpi,17.628236055374146,,,True,True,True,True,True,True,True,0.05595375,0.1263011166666666,2.009765089850383,3.854058039005429,3
+Kimi K2,geometry,13_geometry_closest_pair_2d,serial,9.380406141281128,,,True,True,True,True,True,True,True,8.2e-09,8.2e-09,,,1
+Kimi K2,geometry,11_geometry_convex_hull_perimeter,mpi,21.22987723350525,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,geometry,11_geometry_convex_hull_perimeter,serial,25.20066809654236,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,geometry,12_geometry_smallest_triangle,mpi,27.8368980884552,,,True,True,True,True,True,True,True,0.0020957,0.0027496666666666,1.408807985907223,1.7172305196354445,3
+Kimi K2,geometry,12_geometry_smallest_triangle,serial,3.7833430767059326,,,True,True,True,True,True,True,True,3.34e-08,3.34e-08,,,1
+Kimi K2,geometry,14_geometry_closest_pair_1d,mpi,35.0100531578064,,,True,True,True,True,True,True,False,0.0012674,0.0012674,,,1
+Kimi K2,geometry,14_geometry_closest_pair_1d,serial,108.6717050075531,,,True,True,True,True,True,True,True,0.0008368332,0.0008368332,,,1
+Kimi K2,geometry,10_geometry_convex_hull,mpi,99.39907813072205,,,True,True,True,False,False,False,False,,,,,0
+Kimi K2,geometry,10_geometry_convex_hull,serial,232.83573627471924,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,transform,59_transform_map_function,mpi,22.475470781326297,,,True,True,True,True,True,True,True,0.0092892,0.0099402,1.0962407957628215,0.9840551980054502,3
+Kimi K2,transform,59_transform_map_function,serial,5.195582866668701,,,True,True,True,True,True,True,True,0.0059604002,0.0059604002,,,1
+Kimi K2,transform,57_transform_inverse_offset,mpi,10.883960247039797,,,True,True,True,True,False,True,False,0.0020766,0.0020766,,,1
+Kimi K2,transform,57_transform_inverse_offset,serial,6.159822225570679,,,True,True,True,True,True,True,True,0.0007354664,0.0007354664,,,1
+Kimi K2,transform,55_transform_relu,mpi,24.02246403694153,,,True,True,True,True,True,True,True,0.0050484,0.0085273333333333,0.7525939177101967,0.3651487096400879,3
+Kimi K2,transform,55_transform_relu,serial,3.6668639183044434,,,True,True,True,True,True,True,True,0.0182807998,0.0182807998,,,1
+Kimi K2,transform,56_transform_negate_odds,mpi,9.96913194656372,,,True,True,True,True,False,True,False,0.0040398,0.0040398,,,1
+Kimi K2,transform,56_transform_negate_odds,serial,102.97756505012512,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,transform,58_transform_squaring,mpi,23.506819009780884,,,True,True,True,True,True,True,True,0.00125745,0.0015521833333333,1.1492886500158075,1.445465028430554,3
+Kimi K2,transform,58_transform_squaring,serial,3.5743470191955566,,,True,True,True,True,True,True,True,0.0004908584,0.0004908584,,,1
+Kimi K2,reduce,26_reduce_product_of_inverses,mpi,10.152495861053469,,,True,True,True,True,True,True,True,0.00519015,0.0100053833333333,1.935001064005864,3.1535504754197854,3
+Kimi K2,reduce,26_reduce_product_of_inverses,serial,6.809385061264038,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,reduce,27_reduce_average,mpi,13.86695384979248,,,True,True,True,True,True,True,True,0.00530915,0.0099395166666666,1.9752361067275244,3.064822052494278,3
+Kimi K2,reduce,27_reduce_average,serial,4.67844820022583,,,True,True,True,True,True,True,True,0.01805245,0.01805245,,,1
+Kimi K2,reduce,28_reduce_smallest_odd_number,mpi,3.753872871398926,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,reduce,28_reduce_smallest_odd_number,serial,107.71249794960022,,,True,True,True,True,True,True,True,0.0218926164,0.0218926164,,,1
+Kimi K2,reduce,25_reduce_xor,mpi,8.993137121200562,,,True,True,True,True,True,True,True,0.0197104,0.0214044666666666,0.9365657103214956,0.8402564627242344,3
+Kimi K2,reduce,25_reduce_xor,serial,2.6432912349700928,,,True,True,True,True,True,True,True,0.0199114166,0.0199114166,,,1
+Kimi K2,reduce,29_reduce_sum_of_min_of_pairs,mpi,10.329834938049316,,,True,True,True,True,True,True,True,0.0104687,0.0153740333333333,1.5914487949793192,0.877186331806455,3
+Kimi K2,reduce,29_reduce_sum_of_min_of_pairs,serial,6.504991054534912,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Kimi K2,dense_la,00_dense_la_lu_decomp,mpi,36.897066831588745,,,True,True,True,True,True,True,False,0.0827942,0.0827942,,,1
+Kimi K2,dense_la,00_dense_la_lu_decomp,serial,21.6476149559021,,,True,True,True,True,True,True,True,0.0840372,0.0840372,,,1
+Kimi K2,dense_la,04_dense_la_gemv,mpi,4.687433958053589,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,dense_la,04_dense_la_gemv,serial,11.7845778465271,,,True,True,True,True,True,True,True,0.0320356584,0.0320356584,,,1
+Kimi K2,dense_la,02_dense_la_gemm,mpi,10.65490221977234,,,True,True,True,True,True,True,True,0.00494675,0.00879725,1.632192655145326,2.6881892151412545,3
+Kimi K2,dense_la,02_dense_la_gemm,serial,10.990605115890505,,,True,True,True,True,True,True,True,0.0031763248,0.0031763248,,,1
+Kimi K2,dense_la,01_dense_la_solve,mpi,8.60711407661438,,,True,True,True,True,True,True,False,0.083155,0.083155,,,1
+Kimi K2,dense_la,01_dense_la_solve,serial,29.88367509841919,,,True,True,True,True,True,True,True,0.1496966836,0.1496966836,,,1
+Kimi K2,dense_la,03_dense_la_axpy,mpi,21.419766902923584,,,True,True,True,True,True,True,True,0.0294688,0.0888452666666666,0.6741982273835834,0.152405698043418,3
+Kimi K2,dense_la,03_dense_la_axpy,serial,2.135650157928467,,,True,True,True,True,True,True,True,0.0086696666,0.0086696666,,,1
+Kimi K2,sort,41_sort_k-th_smallest_element,mpi,9.162800073623655,,,True,True,True,True,True,True,True,0.0054521,0.0064415,1.5022468406668992,1.4414642731432594,3
+Kimi K2,sort,41_sort_k-th_smallest_element,serial,7.270328044891357,,,True,True,True,True,True,True,True,0.0016419502,0.0016419502,,,1
+Kimi K2,sort,43_sort_sort_an_array_of_structs_by_key,mpi,15.621292114257812,,,True,True,True,True,False,False,False,,,,,0
+Kimi K2,sort,43_sort_sort_an_array_of_structs_by_key,serial,3.287168025970459,,,True,True,True,True,True,True,True,0.0051150832,0.0051150832,,,1
+Kimi K2,sort,44_sort_sort_non-zero_elements,mpi,26.4027841091156,,,True,True,True,True,True,True,False,0.0015264,0.0015264,,,1
+Kimi K2,sort,44_sort_sort_non-zero_elements,serial,7.157050848007202,,,True,True,True,True,True,True,True,0.0033086584,0.0033086584,,,1
+Kimi K2,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,116.41247010231018,,,True,True,True,True,True,True,True,0.0101263,0.0129499333333333,0.9005697044286083,1.3440644657969842,3
+Kimi K2,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,3.9739990234375,,,True,True,True,True,True,True,True,0.0282154836,0.0282154836,,,1
+Kimi K2,sort,42_sort_sorted_ranks,mpi,4.01574182510376,,,True,True,True,True,False,True,False,14.0523826,14.0523826,,,1
+Kimi K2,sort,42_sort_sorted_ranks,serial,11.471374273300173,,,True,True,True,True,True,True,True,0.0152019916,0.0152019916,,,1
+Kimi K2,sparse_la,46_sparse_la_spmm,mpi,9.9757559299469,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,sparse_la,46_sparse_la_spmm,serial,13.81182098388672,,,True,True,True,True,True,True,True,0.0177240416,0.0177240416,,,1
+Kimi K2,sparse_la,47_sparse_la_spmv,mpi,3.8753230571746826,,,True,True,True,True,True,True,False,0.0015108,0.0015108,,,1
+Kimi K2,sparse_la,47_sparse_la_spmv,serial,2.553068161010742,,,True,True,True,True,True,True,True,0.0015723084,0.0015723084,,,1
+Kimi K2,sparse_la,48_sparse_la_sparse_axpy,mpi,15.447242975234984,,,True,True,True,False,False,False,False,,,,,0
+Kimi K2,sparse_la,48_sparse_la_sparse_axpy,serial,9.996594905853271,,,True,True,True,False,False,False,False,,,,,0
+Kimi K2,sparse_la,45_sparse_la_sparse_solve,mpi,23.606315851211548,,,True,True,True,True,True,True,True,0.04025925,0.0825711166666666,1.997895950716692,3.434097753932326,3
+Kimi K2,sparse_la,45_sparse_la_sparse_solve,serial,50.45539999008179,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,29.0972900390625,,,True,True,True,True,True,True,True,0.0513572,0.0653550666666666,0.9198145226142352,0.5778672430651588,3
+Kimi K2,sparse_la,49_sparse_la_sparse_lu_decomp,serial,143.32028818130493,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,stencil,50_stencil_xor_kernel,mpi,41.00068116188049,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,stencil,50_stencil_xor_kernel,serial,24.67110300064087,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,stencil,51_stencil_edge_kernel,mpi,37.15011286735535,,,True,True,True,True,True,True,True,0.0311221,0.0415481166666666,1.6126546730458422,1.1582198806684507,3
+Kimi K2,stencil,51_stencil_edge_kernel,serial,4.591048955917358,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,38.0056471824646,,,True,True,True,True,True,True,True,0.038916,0.0649396333333333,0.7348992147931609,0.3780135154693551,3
+Kimi K2,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,121.39582014083862,,,True,True,True,True,True,True,True,0.0157305584,0.0157305584,,,1
+Kimi K2,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,16.75955581665039,,,True,True,True,True,True,True,True,0.0224548,0.0434185166666666,0.7688262242095965,0.2857057427302159,3
+Kimi K2,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,2.2636380195617676,,,True,True,True,True,True,True,True,0.0111793586,0.0111793586,,,1
+Kimi K2,stencil,54_stencil_game_of_life,mpi,38.707422971725464,,,True,True,True,True,True,True,True,0.0902085,0.1131966333333333,1.6768419827399856,1.541699620856945,3
+Kimi K2,stencil,54_stencil_game_of_life,serial,124.97986888885498,,,True,True,True,True,True,True,True,0.1271337916,0.1271337916,,,1
+Kimi K2,histogram,20_histogram_pixel_histogram,mpi,16.110517978668213,,,True,True,True,True,True,True,True,0.0012484,0.0016230666666666,1.781960909964755,1.593324738576135,3
+Kimi K2,histogram,20_histogram_pixel_histogram,serial,102.3532919883728,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,histogram,24_histogram_count_quartile,mpi,12.635560989379885,,,True,True,True,True,True,True,True,0.0089164,0.0206585666666666,1.9298505237466796,3.919676102462877,3
+Kimi K2,histogram,24_histogram_count_quartile,serial,8.656819105148315,,,True,True,True,True,True,True,True,0.0399787582,0.0399787582,,,1
+Kimi K2,histogram,22_histogram_count_quadrants,mpi,14.13369083404541,,,True,True,True,True,True,True,True,0.01072305,0.0216071833333333,1.9554431375548356,3.3380241629014136,3
+Kimi K2,histogram,22_histogram_count_quadrants,serial,2.2556850910186768,,,True,True,True,True,True,True,True,0.0357812998,0.0357812998,,,1
+Kimi K2,histogram,23_histogram_first_letter_counts,mpi,9.781259775161743,,,True,True,True,True,True,True,True,0.0035032,0.0054540333333333,0.8548977500122016,0.3998584652612115,3
+Kimi K2,histogram,23_histogram_first_letter_counts,serial,5.139050245285034,,,True,True,True,True,True,True,True,0.0034670752,0.0034670752,,,1
+Kimi K2,histogram,21_histogram_bin_0-100,mpi,16.553269147872925,,,True,True,True,True,True,True,True,0.00249065,0.0032863833333333,1.8904012866277016,1.934916588039267,3
+Kimi K2,histogram,21_histogram_bin_0-100,serial,4.741026163101196,,,True,True,True,True,True,True,True,0.0048638334,0.0048638334,,,1
+Kimi K2,search,39_search_xor_contains,mpi,16.05167579650879,,,True,True,True,True,True,True,True,1.93e-05,3.726666666666667e-05,1.0466321243523315,0.2793914246196404,3
+Kimi K2,search,39_search_xor_contains,serial,6.702080965042114,,,True,True,True,True,True,True,True,2.66334e-05,2.66334e-05,,,1
+Kimi K2,search,37_search_find_the_closest_number_to_pi,mpi,13.082786083221436,,,True,True,True,True,True,True,True,0.0027224,0.0028654166666666,1.1213635027916544,1.0821502631998725,3
+Kimi K2,search,37_search_find_the_closest_number_to_pi,serial,7.388635873794556,,,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Kimi K2,search,38_search_find_the_first_even_number,mpi,10.615406036376951,,,True,True,True,True,True,True,True,0.0002565,0.0003532333333333,1.0994152046783627,0.5410590943975442,3
+Kimi K2,search,38_search_find_the_first_even_number,serial,3.938563108444214,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Kimi K2,search,35_search_search_for_last_struct_by_key,mpi,111.07233715057372,,,True,True,True,True,True,True,True,0.0014328,0.0029054166666666,0.5879601132586483,0.2956329760344988,3
+Kimi K2,search,35_search_search_for_last_struct_by_key,serial,105.6172971725464,,,True,True,True,True,True,True,True,0.0,0.0,,,1
+Kimi K2,search,36_search_check_if_array_contains_value,mpi,8.794701099395752,,,True,True,True,True,True,True,True,0.0002821,0.0004946333333333,2.32258064516129,1.198682766190999,3
+Kimi K2,search,36_search_check_if_array_contains_value,serial,2.8784098625183105,,,True,True,True,True,True,True,True,0.0009807584,0.0009807584,,,1
+Kimi K2,fft,05_fft_inverse_fft,mpi,10.060614824295044,,,True,True,True,True,True,True,True,0.00311525,0.0057565833333333,2.252786395495806,3.146777947195249,3
+Kimi K2,fft,05_fft_inverse_fft,serial,5.755337953567505,,,True,True,True,True,True,True,True,0.0085761336,0.0085761336,,,1
+Kimi K2,fft,08_fft_split_fft,mpi,61.22365593910217,,,True,True,True,True,False,True,False,0.0276748,0.0276748,,,1
+Kimi K2,fft,08_fft_split_fft,serial,3.423633098602295,,,True,True,True,False,False,False,False,,,,,0
+Kimi K2,fft,07_fft_fft_conjugate,mpi,31.20301818847656,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,fft,07_fft_fft_conjugate,serial,21.648526191711422,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,fft,09_fft_fft_out_of_place,mpi,10.535085201263428,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,fft,09_fft_fft_out_of_place,serial,28.48444104194641,,,True,True,True,True,True,True,True,0.007750875,0.007750875,,,1
+Kimi K2,fft,06_fft_dft,mpi,3.33395004272461,,,True,True,True,True,True,True,True,0.00714035,0.01608645,2.0114984619891607,3.8464501039864993,3
+Kimi K2,fft,06_fft_dft,serial,2.2471392154693604,,,True,True,True,True,True,True,True,0.02812335,0.02812335,,,1
+Kimi K2,scan,33_scan_reverse_prefix_sum,mpi,45.53637909889221,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,scan,33_scan_reverse_prefix_sum,serial,5.328158140182495,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,scan,30_scan_prefix_sum,mpi,10.3188898563385,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,scan,30_scan_prefix_sum,serial,4.633354902267456,,,True,True,True,True,True,True,True,0.0087295834,0.0087295834,,,1
+Kimi K2,scan,34_scan_largest_contiguous_subarray_sum,mpi,15.202491044998167,,,True,True,True,True,True,True,True,0.0918767,0.2053607,1.9573952172156768,3.7762893094767223,3
+Kimi K2,scan,34_scan_largest_contiguous_subarray_sum,serial,6.365418910980225,,,True,True,True,True,True,True,True,1.66e-08,1.66e-08,,,1
+Kimi K2,scan,32_scan_sum_of_prefix_sum_array,mpi,13.342671155929564,,,True,True,True,True,True,False,False,,,,,0
+Kimi K2,scan,32_scan_sum_of_prefix_sum_array,serial,5.014909267425537,,,True,True,True,True,True,True,True,0.0046406418,0.0046406418,,,1
+Kimi K2,scan,31_scan_scan_with_min_function,mpi,19.70201277732849,,,True,True,True,False,False,False,False,,,,,0
+Kimi K2,scan,31_scan_scan_with_min_function,serial,2.512584924697876,,,True,True,True,True,True,True,True,0.0078532998,0.0078532998,,,1
+Kimi K2,graph,17_graph_highest_degree,mpi,2.963879346847534,,,True,True,True,True,True,True,True,0.00273625,0.0031034499999999,0.7431920027576697,1.024321608040201,3
+Kimi K2,graph,17_graph_highest_degree,serial,1.8552558422088623,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,graph,16_graph_largest_component,mpi,30.951486825942993,,,True,True,True,True,True,True,False,0.0956536,0.0956536,,,1
+Kimi K2,graph,16_graph_largest_component,serial,12.77998399734497,,,True,True,True,True,True,True,True,0.1034391414,0.1034391414,,,1
+Kimi K2,graph,19_graph_shortest_path,mpi,5.381947040557861,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,graph,19_graph_shortest_path,serial,12.085490226745604,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,graph,15_graph_edge_count,mpi,13.372276306152344,,,True,False,True,False,False,False,False,,,,,0
+Kimi K2,graph,15_graph_edge_count,serial,1.7298102378845217,,,True,True,True,True,True,True,True,5.82e-08,5.82e-08,,,1
+Kimi K2,graph,18_graph_count_components,mpi,27.656790018081665,,,True,True,True,True,False,True,False,0.2081642,0.2081642,,,1
+Kimi K2,graph,18_graph_count_components,serial,11.02909016609192,,,True,True,True,True,True,True,True,0.0686226832,0.0686226832,,,1
+Llama3.3 8B,geometry,13_geometry_closest_pair_2d,mpi,3.938745260238647,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,13_geometry_closest_pair_2d,serial,3.5749759674072266,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,11_geometry_convex_hull_perimeter,mpi,7.40996789932251,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,11_geometry_convex_hull_perimeter,serial,6.050637722015381,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,12_geometry_smallest_triangle,mpi,4.205649137496948,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,12_geometry_smallest_triangle,serial,3.2738537788391113,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,14_geometry_closest_pair_1d,mpi,6.099119186401367,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,14_geometry_closest_pair_1d,serial,2.437588930130005,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,10_geometry_convex_hull,mpi,14.595134258270264,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,geometry,10_geometry_convex_hull,serial,7.433303594589233,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,59_transform_map_function,mpi,3.7032930850982666,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,59_transform_map_function,serial,2.151660919189453,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,57_transform_inverse_offset,mpi,5.521191358566284,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,57_transform_inverse_offset,serial,1.992081880569458,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,55_transform_relu,mpi,5.250666856765747,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,55_transform_relu,serial,1.8525688648223877,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,56_transform_negate_odds,mpi,5.935196876525879,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,56_transform_negate_odds,serial,1.8087396621704104,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,58_transform_squaring,mpi,4.057972192764282,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,transform,58_transform_squaring,serial,0.9915101528167723,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,26_reduce_product_of_inverses,mpi,2.6309139728546143,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,26_reduce_product_of_inverses,serial,2.2236099243164062,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,27_reduce_average,mpi,3.871970653533935,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,27_reduce_average,serial,1.5354011058807373,,,True,True,True,True,True,True,True,0.0234096582,0.0234096582,,,1
+Llama3.3 8B,reduce,28_reduce_smallest_odd_number,mpi,2.727544069290161,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,28_reduce_smallest_odd_number,serial,2.32324481010437,,,True,True,True,True,True,True,True,0.0281264002,0.0281264002,,,1
+Llama3.3 8B,reduce,25_reduce_xor,mpi,2.2822909355163574,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,25_reduce_xor,serial,1.65740966796875,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,29_reduce_sum_of_min_of_pairs,mpi,2.3841569423675537,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,reduce,29_reduce_sum_of_min_of_pairs,serial,1.697096824645996,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,00_dense_la_lu_decomp,mpi,5.9024498462677,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,00_dense_la_lu_decomp,serial,4.0686421394348145,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,04_dense_la_gemv,mpi,6.033840894699097,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,04_dense_la_gemv,serial,2.6577858924865723,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,02_dense_la_gemm,mpi,9.82955813407898,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,02_dense_la_gemm,serial,4.4421820640563965,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,01_dense_la_solve,mpi,9.24730110168457,,,True,True,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,01_dense_la_solve,serial,8.562636852264404,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,03_dense_la_axpy,mpi,3.5940301418304443,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,dense_la,03_dense_la_axpy,serial,2.3907477855682373,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,41_sort_k-th_smallest_element,mpi,5.098495960235596,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,41_sort_k-th_smallest_element,serial,2.1432831287384033,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,43_sort_sort_an_array_of_structs_by_key,mpi,5.931419134140015,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,43_sort_sort_an_array_of_structs_by_key,serial,1.3466088771820068,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,44_sort_sort_non-zero_elements,mpi,5.963695049285889,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,44_sort_sort_non-zero_elements,serial,3.011665105819702,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,9.283576011657717,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,2.3463730812072754,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,42_sort_sorted_ranks,mpi,9.894527196884155,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sort,42_sort_sorted_ranks,serial,2.4827136993408203,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,46_sparse_la_spmm,mpi,7.552285194396973,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,46_sparse_la_spmm,serial,5.573714017868042,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,47_sparse_la_spmv,mpi,3.1821060180664062,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,47_sparse_la_spmv,serial,2.7930312156677246,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,48_sparse_la_sparse_axpy,mpi,6.547063827514648,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,48_sparse_la_sparse_axpy,serial,5.930660724639893,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,45_sparse_la_sparse_solve,mpi,9.10950493812561,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,45_sparse_la_sparse_solve,serial,7.772765159606934,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,12.600049018859863,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,sparse_la,49_sparse_la_sparse_lu_decomp,serial,3.5727782249450684,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,50_stencil_xor_kernel,mpi,13.54812788963318,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,50_stencil_xor_kernel,serial,4.031472682952881,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,51_stencil_edge_kernel,mpi,8.498464107513428,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,51_stencil_edge_kernel,serial,7.208109140396118,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,6.317483901977539,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,3.1249918937683105,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,8.413315296173096,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,3.1518640518188477,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,stencil,54_stencil_game_of_life,mpi,9.696542024612429,,,True,True,True,True,True,False,False,,,,,0
+Llama3.3 8B,stencil,54_stencil_game_of_life,serial,5.984718084335327,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,20_histogram_pixel_histogram,mpi,3.1383869647979736,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,20_histogram_pixel_histogram,serial,2.7968480587005615,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,24_histogram_count_quartile,mpi,6.832257986068726,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,24_histogram_count_quartile,serial,2.5764000415802,,,True,True,True,True,True,True,True,0.1796334084,0.1796334084,,,1
+Llama3.3 8B,histogram,22_histogram_count_quadrants,mpi,5.488698720932007,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,22_histogram_count_quadrants,serial,5.220745801925659,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,23_histogram_first_letter_counts,mpi,4.735621929168701,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,23_histogram_first_letter_counts,serial,3.1971869468688965,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,21_histogram_bin_0-100,mpi,4.576735019683838,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,histogram,21_histogram_bin_0-100,serial,3.5958731174468994,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,39_search_xor_contains,mpi,5.739303112030029,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,39_search_xor_contains,serial,2.0147409439086914,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,37_search_find_the_closest_number_to_pi,mpi,3.0674188137054443,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,37_search_find_the_closest_number_to_pi,serial,2.1772971153259277,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,38_search_find_the_first_even_number,mpi,2.769292116165161,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,38_search_find_the_first_even_number,serial,2.507160186767578,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,35_search_search_for_last_struct_by_key,mpi,4.195634126663208,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,35_search_search_for_last_struct_by_key,serial,1.767524003982544,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,36_search_check_if_array_contains_value,mpi,3.1555368900299072,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,search,36_search_check_if_array_contains_value,serial,1.3083629608154297,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,05_fft_inverse_fft,mpi,7.897855997085571,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,05_fft_inverse_fft,serial,1.919166088104248,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,08_fft_split_fft,mpi,9.880160093307495,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,08_fft_split_fft,serial,3.7257320880889897,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,07_fft_fft_conjugate,mpi,6.303409099578857,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,07_fft_fft_conjugate,serial,1.5104520320892334,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,09_fft_fft_out_of_place,mpi,12.965605974197388,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,09_fft_fft_out_of_place,serial,4.018741846084595,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,06_fft_dft,mpi,8.249452114105225,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,fft,06_fft_dft,serial,3.070683002471924,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,33_scan_reverse_prefix_sum,mpi,3.8675289154052734,,,True,True,True,True,True,False,False,,,,,0
+Llama3.3 8B,scan,33_scan_reverse_prefix_sum,serial,2.643095016479492,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,30_scan_prefix_sum,mpi,4.147036075592041,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,30_scan_prefix_sum,serial,1.7722718715667725,,,True,True,True,True,True,True,True,0.0111024496,0.0111024496,,,1
+Llama3.3 8B,scan,34_scan_largest_contiguous_subarray_sum,mpi,6.986436128616333,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,34_scan_largest_contiguous_subarray_sum,serial,2.4013617038726807,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,32_scan_sum_of_prefix_sum_array,mpi,2.9293251037597656,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,32_scan_sum_of_prefix_sum_array,serial,2.580174207687378,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,31_scan_scan_with_min_function,mpi,4.669549942016602,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,scan,31_scan_scan_with_min_function,serial,3.6906251907348633,,,True,True,True,True,True,False,False,,,,,0
+Llama3.3 8B,graph,17_graph_highest_degree,mpi,3.569120168685913,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,17_graph_highest_degree,serial,2.0425989627838135,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,16_graph_largest_component,mpi,6.722896099090576,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,16_graph_largest_component,serial,5.656714916229248,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,19_graph_shortest_path,mpi,6.046890020370483,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,19_graph_shortest_path,serial,4.999840021133423,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,15_graph_edge_count,mpi,3.4581491947174072,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,15_graph_edge_count,serial,1.6416029930114746,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,18_graph_count_components,mpi,6.659154891967773,,,True,False,True,False,False,False,False,,,,,0
+Llama3.3 8B,graph,18_graph_count_components,serial,3.2552859783172607,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,geometry,13_geometry_closest_pair_2d,mpi,3.161942720413208,,,True,True,True,True,True,True,True,0.07278335,0.1331401833333333,1.917794734275092,2.949721330496604,3
+Llama4 Maverick,geometry,13_geometry_closest_pair_2d,serial,1.72733736038208,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Llama4 Maverick,geometry,11_geometry_convex_hull_perimeter,mpi,17.758793115615845,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,geometry,11_geometry_convex_hull_perimeter,serial,4.5836358070373535,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,geometry,12_geometry_smallest_triangle,mpi,3.702137947082519,,,True,True,True,True,True,True,True,0.000867,0.0012545333333333,1.9300020230629171,2.2006920415224913,3
+Llama4 Maverick,geometry,12_geometry_smallest_triangle,serial,2.408013105392456,,,True,True,True,True,True,True,True,8.4e-09,8.4e-09,,,1
+Llama4 Maverick,geometry,14_geometry_closest_pair_1d,mpi,5.259674310684204,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,geometry,14_geometry_closest_pair_1d,serial,3.266937017440796,,,True,True,True,True,True,True,True,0.0008281748,0.0008281748,,,1
+Llama4 Maverick,geometry,10_geometry_convex_hull,mpi,11.004559755325316,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,geometry,10_geometry_convex_hull,serial,4.4084179401397705,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,59_transform_map_function,mpi,2.8334150314331055,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,59_transform_map_function,serial,1.9420380592346191,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,57_transform_inverse_offset,mpi,4.301135778427124,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,57_transform_inverse_offset,serial,2.41701602935791,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,55_transform_relu,mpi,3.1712119579315186,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,55_transform_relu,serial,1.2827820777893066,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,56_transform_negate_odds,mpi,4.650638103485107,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,56_transform_negate_odds,serial,1.6341698169708252,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,transform,58_transform_squaring,mpi,2.2538859844207764,,,True,True,True,True,False,True,False,0.000425,0.000425,,,1
+Llama4 Maverick,transform,58_transform_squaring,serial,0.6376469135284424,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,26_reduce_product_of_inverses,mpi,1.8188979625701904,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,26_reduce_product_of_inverses,serial,3.262075185775757,,,True,True,True,True,True,True,True,0.0109349414,0.0109349414,,,1
+Llama4 Maverick,reduce,27_reduce_average,mpi,1.6120781898498535,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,27_reduce_average,serial,1.8131999969482424,,,True,True,True,True,True,True,True,0.0163102916,0.0163102916,,,1
+Llama4 Maverick,reduce,28_reduce_smallest_odd_number,mpi,1.9697129726409912,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,28_reduce_smallest_odd_number,serial,1.9463257789611816,,,True,True,True,True,True,True,True,0.0221664998,0.0221664998,,,1
+Llama4 Maverick,reduce,25_reduce_xor,mpi,1.764657974243164,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,25_reduce_xor,serial,0.8868210315704346,,,True,True,True,True,True,True,True,0.0197439748,0.0197439748,,,1
+Llama4 Maverick,reduce,29_reduce_sum_of_min_of_pairs,mpi,2.1418380737304688,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,reduce,29_reduce_sum_of_min_of_pairs,serial,2.035862922668457,,,True,True,True,True,True,True,True,0.0164320916,0.0164320916,,,1
+Llama4 Maverick,dense_la,00_dense_la_lu_decomp,mpi,6.775804281234741,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,00_dense_la_lu_decomp,serial,1.5699920654296875,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,04_dense_la_gemv,mpi,3.6453590393066406,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,04_dense_la_gemv,serial,2.2619829177856445,,,True,True,True,True,True,True,True,0.0322462248,0.0322462248,,,1
+Llama4 Maverick,dense_la,02_dense_la_gemm,mpi,4.746170997619629,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,02_dense_la_gemm,serial,1.9661929607391355,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,01_dense_la_solve,mpi,9.214379072189333,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,01_dense_la_solve,serial,7.645972967147827,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,03_dense_la_axpy,mpi,3.9992148876190186,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,dense_la,03_dense_la_axpy,serial,2.118619918823242,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,41_sort_k-th_smallest_element,mpi,5.8841941356658936,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,41_sort_k-th_smallest_element,serial,1.715177059173584,,,True,True,True,True,True,True,True,0.0008134082,0.0008134082,,,1
+Llama4 Maverick,sort,43_sort_sort_an_array_of_structs_by_key,mpi,5.292526721954346,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,43_sort_sort_an_array_of_structs_by_key,serial,1.7324936389923096,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,44_sort_sort_non-zero_elements,mpi,5.122787952423096,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,44_sort_sort_non-zero_elements,serial,4.685460090637207,,,True,True,True,True,True,True,True,0.0015093168,0.0015093168,,,1
+Llama4 Maverick,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,6.3132407665252686,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,1.8924260139465332,,,True,True,True,True,True,True,True,0.0241140248,0.0241140248,,,1
+Llama4 Maverick,sort,42_sort_sorted_ranks,mpi,6.643021821975708,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sort,42_sort_sorted_ranks,serial,2.7376129627227783,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,46_sparse_la_spmm,mpi,5.626345872879028,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,46_sparse_la_spmm,serial,3.1236090660095215,,,True,True,True,True,True,True,True,0.0053671002,0.0053671002,,,1
+Llama4 Maverick,sparse_la,47_sparse_la_spmv,mpi,5.854835033416748,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,47_sparse_la_spmv,serial,1.591541051864624,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,48_sparse_la_sparse_axpy,mpi,4.884099006652832,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,48_sparse_la_sparse_axpy,serial,3.111922025680542,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,45_sparse_la_sparse_solve,mpi,4.635791063308716,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,45_sparse_la_sparse_solve,serial,7.632576942443848,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,8.729501962661743,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,sparse_la,49_sparse_la_sparse_lu_decomp,serial,5.338261127471924,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,stencil,50_stencil_xor_kernel,mpi,7.444766998291016,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,50_stencil_xor_kernel,serial,2.690662145614624,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,51_stencil_edge_kernel,mpi,8.28968620300293,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,51_stencil_edge_kernel,serial,4.190850019454956,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,7.245980739593506,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,5.033570051193237,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,5.662553071975708,,,True,True,True,True,True,True,True,0.019853,0.0336457333333333,1.5066217385928031,2.45485317080542,3
+Llama4 Maverick,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,2.321132183074951,,,True,True,True,True,True,True,True,0.0112951082,0.0112951082,,,1
+Llama4 Maverick,stencil,54_stencil_game_of_life,mpi,6.9254748821258545,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,stencil,54_stencil_game_of_life,serial,3.7837769985198975,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,20_histogram_pixel_histogram,mpi,1.734632968902588,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,20_histogram_pixel_histogram,serial,1.9350080490112305,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,24_histogram_count_quartile,mpi,3.9770150184631343,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,24_histogram_count_quartile,serial,1.3397681713104248,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,22_histogram_count_quadrants,mpi,4.586139678955078,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,22_histogram_count_quadrants,serial,1.7875409126281738,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,23_histogram_first_letter_counts,mpi,2.9762637615203857,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,23_histogram_first_letter_counts,serial,2.504946231842041,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,21_histogram_bin_0-100,mpi,2.547935962677002,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,histogram,21_histogram_bin_0-100,serial,1.1077849864959717,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,search,39_search_xor_contains,mpi,4.201728105545044,,,True,True,True,True,True,True,True,0.0007871,0.0011584166666666,1.7649599796722144,1.0694791947342082,3
+Llama4 Maverick,search,39_search_xor_contains,serial,2.0648841857910156,,,True,True,True,True,True,True,True,0.0004040168,0.0004040168,,,1
+Llama4 Maverick,search,37_search_find_the_closest_number_to_pi,mpi,4.713672876358032,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,search,37_search_find_the_closest_number_to_pi,serial,2.3521480560302734,,,True,True,True,True,True,True,True,0.0028455918,0.0028455918,,,1
+Llama4 Maverick,search,38_search_find_the_first_even_number,mpi,3.8281400203704834,,,True,True,True,True,True,True,True,0.0002566,0.0002976833333333,0.983518589497892,0.6832645453335109,3
+Llama4 Maverick,search,38_search_find_the_first_even_number,serial,1.6599297523498535,,,True,True,True,True,True,True,True,3.36e-08,3.36e-08,,,1
+Llama4 Maverick,search,35_search_search_for_last_struct_by_key,mpi,4.112728118896484,,,True,True,True,True,True,True,True,0.0013854,0.00289115,0.5628275441803777,0.2870373247972154,3
+Llama4 Maverick,search,35_search_search_for_last_struct_by_key,serial,2.7945170402526855,,,True,True,True,True,True,True,True,0.0015351,0.0015351,,,1
+Llama4 Maverick,search,36_search_check_if_array_contains_value,mpi,1.8016328811645508,,,True,True,True,True,True,True,True,0.000309,0.0004544333333333,1.808414239482201,1.1277497477295662,3
+Llama4 Maverick,search,36_search_check_if_array_contains_value,serial,1.7461957931518557,,,True,True,True,True,True,True,True,0.000757075,0.000757075,,,1
+Llama4 Maverick,fft,05_fft_inverse_fft,mpi,3.15398907661438,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,05_fft_inverse_fft,serial,1.1964640617370603,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,08_fft_split_fft,mpi,2.871209144592285,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,08_fft_split_fft,serial,2.131760835647583,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,07_fft_fft_conjugate,mpi,5.002004861831665,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,07_fft_fft_conjugate,serial,3.2053799629211426,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,09_fft_fft_out_of_place,mpi,10.59025812149048,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,09_fft_fft_out_of_place,serial,3.078890800476074,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,06_fft_dft,mpi,4.441241025924683,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,fft,06_fft_dft,serial,2.03413724899292,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,scan,33_scan_reverse_prefix_sum,mpi,6.3367249965667725,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,scan,33_scan_reverse_prefix_sum,serial,1.2318987846374512,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,scan,30_scan_prefix_sum,mpi,3.582712173461914,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,scan,30_scan_prefix_sum,serial,2.2003049850463867,,,True,True,True,True,True,True,True,0.008161275,0.008161275,,,1
+Llama4 Maverick,scan,34_scan_largest_contiguous_subarray_sum,mpi,6.47210168838501,,,True,True,True,True,True,False,False,,,,,0
+Llama4 Maverick,scan,34_scan_largest_contiguous_subarray_sum,serial,1.3443686962127686,,,True,True,True,True,True,True,True,8.2e-09,8.2e-09,,,1
+Llama4 Maverick,scan,32_scan_sum_of_prefix_sum_array,mpi,6.932034969329834,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,scan,32_scan_sum_of_prefix_sum_array,serial,2.28083872795105,,,True,True,True,True,True,True,True,0.004531483,0.004531483,,,1
+Llama4 Maverick,scan,31_scan_scan_with_min_function,mpi,5.650949001312256,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,scan,31_scan_scan_with_min_function,serial,1.0618538856506348,,,True,True,True,True,True,True,True,0.0054368668,0.0054368668,,,1
+Llama4 Maverick,graph,17_graph_highest_degree,mpi,2.451870918273926,,,True,True,True,True,True,True,True,0.0014662,0.00188715,0.6727231016288139,0.727371945925834,3
+Llama4 Maverick,graph,17_graph_highest_degree,serial,2.6513020992279053,,,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Llama4 Maverick,graph,16_graph_largest_component,mpi,4.992327928543091,,,True,True,True,True,True,True,True,0.0647312,0.0727285333333333,0.893230999356963,0.7992907398580986,3
+Llama4 Maverick,graph,16_graph_largest_component,serial,2.962667942047119,,,True,True,True,True,True,True,True,0.0690449332,0.0690449332,,,1
+Llama4 Maverick,graph,19_graph_shortest_path,mpi,5.688443183898926,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,graph,19_graph_shortest_path,serial,2.8117501735687256,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,graph,15_graph_edge_count,mpi,2.5070888996124268,,,True,True,True,True,True,True,True,0.00130815,0.0014737833333333,1.145850565205404,1.2708022780262205,3
+Llama4 Maverick,graph,15_graph_edge_count,serial,1.5169548988342283,,,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Llama4 Maverick,graph,18_graph_count_components,mpi,5.9098920822143555,,,True,False,True,False,False,False,False,,,,,0
+Llama4 Maverick,graph,18_graph_count_components,serial,2.967622995376587,,,True,True,True,True,True,True,True,0.0689599332,0.0689599332,,,1
+Mistral Nemo,geometry,13_geometry_closest_pair_2d,mpi,5.745460033416748,,,True,True,True,True,True,True,False,0.2249236,0.2249236,,,1
+Mistral Nemo,geometry,13_geometry_closest_pair_2d,serial,4.142225027084351,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,11_geometry_convex_hull_perimeter,mpi,9.742739915847778,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,11_geometry_convex_hull_perimeter,serial,5.736411094665527,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,12_geometry_smallest_triangle,mpi,6.089989185333252,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,12_geometry_smallest_triangle,serial,3.77403712272644,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,14_geometry_closest_pair_1d,mpi,9.26651906967163,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,14_geometry_closest_pair_1d,serial,3.1157479286193848,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,10_geometry_convex_hull,mpi,10.54506516456604,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,geometry,10_geometry_convex_hull,serial,10.86486005783081,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,59_transform_map_function,mpi,3.755441904067993,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,59_transform_map_function,serial,1.3697190284729004,,,True,True,True,True,True,False,False,,,,,0
+Mistral Nemo,transform,57_transform_inverse_offset,mpi,5.708795785903931,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,57_transform_inverse_offset,serial,1.397418975830078,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,55_transform_relu,mpi,5.1355671882629395,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,55_transform_relu,serial,1.9992759227752688,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,56_transform_negate_odds,mpi,5.796072244644165,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,56_transform_negate_odds,serial,2.1500601768493652,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,transform,58_transform_squaring,mpi,6.227710962295532,,,True,True,True,True,True,True,False,0.0025692,0.0025692,,,1
+Mistral Nemo,transform,58_transform_squaring,serial,1.243412971496582,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,26_reduce_product_of_inverses,mpi,5.77333402633667,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,26_reduce_product_of_inverses,serial,2.407460927963257,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,27_reduce_average,mpi,3.1603310108184814,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,27_reduce_average,serial,1.3789689540863037,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,28_reduce_smallest_odd_number,mpi,7.564866065979004,,,True,True,True,True,True,True,True,0.02933165,0.0542725833333333,1.787353909697034,2.918219738746371,3
+Mistral Nemo,reduce,28_reduce_smallest_odd_number,serial,2.1233608722686768,,,True,True,True,True,True,True,True,0.0291512832,0.0291512832,,,1
+Mistral Nemo,reduce,25_reduce_xor,mpi,1.7505431175231934,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,25_reduce_xor,serial,2.766378879547119,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,29_reduce_sum_of_min_of_pairs,mpi,4.934990882873535,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,reduce,29_reduce_sum_of_min_of_pairs,serial,1.7971868515014648,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,00_dense_la_lu_decomp,mpi,9.993951797485352,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,00_dense_la_lu_decomp,serial,13.87545609474182,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,04_dense_la_gemv,mpi,5.187132358551025,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,04_dense_la_gemv,serial,3.4242727756500244,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,02_dense_la_gemm,mpi,8.706185817718506,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,02_dense_la_gemm,serial,2.8511080741882324,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,01_dense_la_solve,mpi,7.211314916610718,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,01_dense_la_solve,serial,8.42858600616455,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,03_dense_la_axpy,mpi,4.691313982009888,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,dense_la,03_dense_la_axpy,serial,2.079232692718506,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,41_sort_k-th_smallest_element,mpi,5.453837156295776,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,41_sort_k-th_smallest_element,serial,1.955212116241455,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,43_sort_sort_an_array_of_structs_by_key,mpi,2.991410970687866,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,43_sort_sort_an_array_of_structs_by_key,serial,1.496401071548462,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,44_sort_sort_non-zero_elements,mpi,6.061790227890015,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,44_sort_sort_non-zero_elements,serial,2.6327850818634033,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,4.090090036392212,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,2.8622899055480957,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,42_sort_sorted_ranks,mpi,6.2415077686309814,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sort,42_sort_sorted_ranks,serial,2.8625192642211914,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,46_sparse_la_spmm,mpi,8.441224813461304,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,46_sparse_la_spmm,serial,3.4217770099639893,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,47_sparse_la_spmv,mpi,5.218122959136963,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,47_sparse_la_spmv,serial,4.5942089557647705,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,48_sparse_la_sparse_axpy,mpi,5.281221866607666,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,48_sparse_la_sparse_axpy,serial,3.624713182449341,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,45_sparse_la_sparse_solve,mpi,6.151485919952393,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,45_sparse_la_sparse_solve,serial,10.837405920028688,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,10.50747299194336,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,sparse_la,49_sparse_la_sparse_lu_decomp,serial,10.067575931549072,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,50_stencil_xor_kernel,mpi,12.381725788116457,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,50_stencil_xor_kernel,serial,5.5828869342803955,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,51_stencil_edge_kernel,mpi,7.7217857837677,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,51_stencil_edge_kernel,serial,3.67194390296936,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,9.717278957366943,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,4.405479907989502,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,5.726546764373779,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,3.5980911254882812,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,54_stencil_game_of_life,mpi,11.447638034820557,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,stencil,54_stencil_game_of_life,serial,5.896314859390259,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,20_histogram_pixel_histogram,mpi,3.756924867630005,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,20_histogram_pixel_histogram,serial,1.6806259155273438,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,24_histogram_count_quartile,mpi,8.195724964141846,,,True,True,True,True,True,False,False,,,,,0
+Mistral Nemo,histogram,24_histogram_count_quartile,serial,1.8405349254608152,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,22_histogram_count_quadrants,mpi,5.320353984832764,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,22_histogram_count_quadrants,serial,4.513198137283325,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,23_histogram_first_letter_counts,mpi,4.773181915283203,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,23_histogram_first_letter_counts,serial,2.092698097229004,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,21_histogram_bin_0-100,mpi,7.029797077178955,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,histogram,21_histogram_bin_0-100,serial,2.615771770477295,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,39_search_xor_contains,mpi,10.78868317604065,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,39_search_xor_contains,serial,1.8302860260009768,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,37_search_find_the_closest_number_to_pi,mpi,4.615557909011841,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,37_search_find_the_closest_number_to_pi,serial,2.5502331256866455,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,38_search_find_the_first_even_number,mpi,4.742802143096924,,,True,True,True,False,False,False,False,,,,,0
+Mistral Nemo,search,38_search_find_the_first_even_number,serial,1.9226789474487305,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,35_search_search_for_last_struct_by_key,mpi,5.401993274688721,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,35_search_search_for_last_struct_by_key,serial,1.8675360679626465,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,36_search_check_if_array_contains_value,mpi,4.223934173583984,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,search,36_search_check_if_array_contains_value,serial,1.1932330131530762,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,05_fft_inverse_fft,mpi,6.0683348178863525,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,05_fft_inverse_fft,serial,1.5678410530090332,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,08_fft_split_fft,mpi,10.337240934371948,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,08_fft_split_fft,serial,7.872025012969971,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,07_fft_fft_conjugate,mpi,5.989828109741211,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,07_fft_fft_conjugate,serial,3.6128571033477783,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,09_fft_fft_out_of_place,mpi,4.456363916397095,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,09_fft_fft_out_of_place,serial,6.919642925262451,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,06_fft_dft,mpi,6.371469974517822,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,fft,06_fft_dft,serial,3.962899208068848,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,33_scan_reverse_prefix_sum,mpi,7.570214033126831,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,33_scan_reverse_prefix_sum,serial,1.9587199687957764,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,30_scan_prefix_sum,mpi,6.014639139175415,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,30_scan_prefix_sum,serial,2.5857391357421875,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,34_scan_largest_contiguous_subarray_sum,mpi,8.263296127319336,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,34_scan_largest_contiguous_subarray_sum,serial,2.8581340312957764,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,32_scan_sum_of_prefix_sum_array,mpi,4.25433611869812,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,32_scan_sum_of_prefix_sum_array,serial,2.288938045501709,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,31_scan_scan_with_min_function,mpi,8.739291906356812,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,scan,31_scan_scan_with_min_function,serial,2.82417893409729,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,17_graph_highest_degree,mpi,4.294360637664795,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,17_graph_highest_degree,serial,2.475128173828125,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,16_graph_largest_component,mpi,6.450463056564331,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,16_graph_largest_component,serial,3.4475438594818115,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,19_graph_shortest_path,mpi,6.553068161010742,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,19_graph_shortest_path,serial,4.388203859329224,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,15_graph_edge_count,mpi,4.424688100814819,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,15_graph_edge_count,serial,2.167104005813598,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,18_graph_count_components,mpi,5.521071195602417,,,True,False,True,False,False,False,False,,,,,0
+Mistral Nemo,graph,18_graph_count_components,serial,3.8155341148376465,,,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,geometry,13_geometry_closest_pair_2d,mpi,21.41053295135498,1497.0,1220.0,True,True,True,True,True,True,True,0.1054527,0.1176967166666666,1.1829891505859973,1.0151467128007972,3
+Qwen 2.5 Coder,geometry,13_geometry_closest_pair_2d,serial,9.173878192901611,1289.0,1180.0,True,True,True,True,True,True,True,2.52e-08,2.52e-08,,,1
+Qwen 2.5 Coder,geometry,11_geometry_convex_hull_perimeter,mpi,41.341153144836426,1794.0,1233.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,geometry,11_geometry_convex_hull_perimeter,serial,42.92254996299744,1767.0,1193.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,geometry,12_geometry_smallest_triangle,mpi,17.650325059890747,1419.0,1199.0,True,True,True,True,True,True,True,0.0012425,0.0017405499999999,2.1141247484909456,1.9423965689355565,3
+Qwen 2.5 Coder,geometry,12_geometry_smallest_triangle,serial,11.521919012069702,1320.0,1179.0,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Qwen 2.5 Coder,geometry,14_geometry_closest_pair_1d,mpi,32.18520998954773,1571.0,1137.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,geometry,14_geometry_closest_pair_1d,serial,11.604855060577393,1257.0,1118.0,True,True,True,True,True,True,True,0.0009905084,0.0009905084,,,1
+Qwen 2.5 Coder,geometry,10_geometry_convex_hull,mpi,65.37394380569458,2121.0,1219.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,geometry,10_geometry_convex_hull,serial,44.3870530128479,1781.0,1180.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,transform,59_transform_map_function,mpi,18.298823833465576,1430.0,1196.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,transform,59_transform_map_function,serial,5.234539031982422,1206.0,1154.0,True,True,True,True,True,True,True,0.0056067336,0.0056067336,,,1
+Qwen 2.5 Coder,transform,57_transform_inverse_offset,mpi,13.25978398323059,1328.0,1160.0,True,True,True,True,True,True,False,0.004059,0.004059,,,1
+Qwen 2.5 Coder,transform,57_transform_inverse_offset,serial,6.121667146682739,1184.0,1120.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,transform,55_transform_relu,mpi,18.118097066879272,1424.0,1189.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,transform,55_transform_relu,serial,6.090383052825928,1210.0,1149.0,True,True,True,True,True,True,True,0.0216169916,0.0216169916,,,1
+Qwen 2.5 Coder,transform,56_transform_negate_odds,mpi,14.208946228027344,1344.0,1168.0,True,True,True,True,False,True,False,0.0061546,0.0061546,,,1
+Qwen 2.5 Coder,transform,56_transform_negate_odds,serial,6.401842832565308,1196.0,1128.0,True,True,True,True,True,True,True,0.0034030582,0.0034030582,,,1
+Qwen 2.5 Coder,transform,58_transform_squaring,mpi,21.07104992866516,1392.0,1143.0,True,True,True,True,True,True,True,0.004375,0.0064284,0.7817690781769079,1.4953142857142856,3
+Qwen 2.5 Coder,transform,58_transform_squaring,serial,3.531888961791992,1132.0,1103.0,True,True,True,True,True,True,True,0.000622217,0.000622217,,,1
+Qwen 2.5 Coder,reduce,26_reduce_product_of_inverses,mpi,15.41421890258789,1353.0,1162.0,True,True,True,True,True,True,True,0.00812765,0.01159385,1.511935839561206,1.9738792886012564,3
+Qwen 2.5 Coder,reduce,26_reduce_product_of_inverses,serial,10.731332063674929,1245.0,1124.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,reduce,27_reduce_average,mpi,9.501545190811155,1257.0,1148.0,True,True,True,True,True,True,True,0.01236325,0.0207902833333333,1.893757377959864,2.647070956261502,3
+Qwen 2.5 Coder,reduce,27_reduce_average,serial,4.81768012046814,1157.0,1111.0,True,True,True,True,True,True,True,0.022533875,0.022533875,,,1
+Qwen 2.5 Coder,reduce,28_reduce_smallest_odd_number,mpi,14.721441745758057,1347.0,1162.0,True,True,True,True,True,True,True,0.02532055,0.04937785,1.638212220417773,3.011838210465412,3
+Qwen 2.5 Coder,reduce,28_reduce_smallest_odd_number,serial,11.260390043258669,1248.0,1126.0,True,True,True,True,True,True,True,0.0220802082,0.0220802082,,,1
+Qwen 2.5 Coder,reduce,25_reduce_xor,mpi,9.228798866271973,1230.0,1121.0,True,True,True,True,True,True,True,0.0323566,0.0430209666666666,0.7366328969834945,0.6130315092655921,3
+Qwen 2.5 Coder,reduce,25_reduce_xor,serial,4.671381950378418,1126.0,1085.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,reduce,29_reduce_sum_of_min_of_pairs,mpi,11.470186948776243,1343.0,1201.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,reduce,29_reduce_sum_of_min_of_pairs,serial,6.56489896774292,1232.0,1162.0,True,True,True,True,True,True,True,0.0335769502,0.0335769502,,,1
+Qwen 2.5 Coder,dense_la,00_dense_la_lu_decomp,mpi,22.698770999908447,1480.0,1182.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,dense_la,00_dense_la_lu_decomp,serial,16.278788805007935,1348.0,1142.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,dense_la,04_dense_la_gemv,mpi,20.016069173812863,1447.0,1203.0,True,True,True,True,True,True,False,0.054258,0.054258,,,1
+Qwen 2.5 Coder,dense_la,04_dense_la_gemv,serial,8.826843023300171,1258.0,1161.0,True,True,True,True,True,True,True,0.0523318334,0.0523318334,,,1
+Qwen 2.5 Coder,dense_la,02_dense_la_gemm,mpi,32.28020119667053,1668.0,1232.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,dense_la,02_dense_la_gemm,serial,11.123793125152588,1324.0,1190.0,True,True,True,True,True,True,True,0.022497158,0.022497158,,,1
+Qwen 2.5 Coder,dense_la,01_dense_la_solve,mpi,27.539140224456787,1562.0,1196.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,dense_la,01_dense_la_solve,serial,37.14871788024902,1660.0,1154.0,True,True,True,True,True,True,True,0.41490635,0.41490635,,,1
+Qwen 2.5 Coder,dense_la,03_dense_la_axpy,mpi,26.922158002853394,1540.0,1185.0,True,True,True,True,True,True,True,0.0513652,0.0654279666666666,1.3384119987851697,0.9025467731115164,3
+Qwen 2.5 Coder,dense_la,03_dense_la_axpy,serial,7.349057912826538,1225.0,1143.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sort,41_sort_k-th_smallest_element,mpi,17.865705966949463,1379.0,1148.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,sort,41_sort_k-th_smallest_element,serial,7.038068771362305,1186.0,1110.0,True,True,True,True,True,True,True,0.0009647752,0.0009647752,,,1
+Qwen 2.5 Coder,sort,43_sort_sort_an_array_of_structs_by_key,mpi,19.735827922821045,1472.0,1221.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sort,43_sort_sort_an_array_of_structs_by_key,serial,4.498231887817383,1223.0,1181.0,True,True,True,True,True,True,True,0.0044797752,0.0044797752,,,1
+Qwen 2.5 Coder,sort,44_sort_sort_non-zero_elements,mpi,29.610348224639893,1575.0,1176.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sort,44_sort_sort_non-zero_elements,serial,6.817056894302368,1200.0,1135.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,25.503930807113647,1551.0,1218.0,True,True,True,True,True,True,True,0.0163759,0.0284888333333333,0.9054850132933246,2.0048852276821427,3
+Qwen 2.5 Coder,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,5.2604169845581055,1231.0,1178.0,True,True,True,True,True,True,True,0.0316624332,0.0316624332,,,1
+Qwen 2.5 Coder,sort,42_sort_sorted_ranks,mpi,21.362674951553345,1499.0,1220.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sort,42_sort_sorted_ranks,serial,13.571753025054932,1350.0,1180.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,46_sparse_la_spmm,mpi,20.579500913619995,1517.0,1251.0,True,True,True,True,True,True,True,0.0135222,0.0151147333333333,0.931251289645211,1.1347709692209849,3
+Qwen 2.5 Coder,sparse_la,46_sparse_la_spmm,serial,6.641210079193115,1275.0,1209.0,True,True,True,True,True,True,True,0.0217765664,0.0217765664,,,1
+Qwen 2.5 Coder,sparse_la,47_sparse_la_spmv,mpi,12.088181018829346,1406.0,1257.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,47_sparse_la_spmv,serial,10.690925121307371,1341.0,1213.0,True,True,True,True,True,True,True,0.0019510332,0.0019510332,,,1
+Qwen 2.5 Coder,sparse_la,48_sparse_la_sparse_axpy,mpi,12.77825927734375,1409.0,1251.0,True,True,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,48_sparse_la_sparse_axpy,serial,9.137980937957764,1317.0,1209.0,True,True,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,45_sparse_la_sparse_solve,mpi,40.57746195793152,1761.0,1212.0,True,True,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,45_sparse_la_sparse_solve,serial,33.84047603607178,1620.0,1170.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,29.099385023117065,1649.0,1260.0,True,True,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,sparse_la,49_sparse_la_sparse_lu_decomp,serial,30.45047187805176,1625.0,1218.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,stencil,50_stencil_xor_kernel,mpi,22.308293104171753,1564.0,1277.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,stencil,50_stencil_xor_kernel,serial,30.062210083007812,1637.0,1236.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,stencil,51_stencil_edge_kernel,mpi,23.9940927028656,1701.0,1389.0,True,True,True,True,True,True,True,0.0450961,0.0565215333333333,1.2678524306979984,0.8496417919763186,3
+Qwen 2.5 Coder,stencil,51_stencil_edge_kernel,serial,20.140855073928833,1603.0,1346.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,19.47197389602661,1566.0,1314.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,15.38175106048584,1466.0,1273.0,True,True,True,True,True,True,True,0.0191210002,0.0191210002,,,1
+Qwen 2.5 Coder,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,18.006314039230347,1465.0,1235.0,True,True,True,True,True,True,True,0.0472364,0.1863090833333333,0.3232934090753542,0.1292091749335338,3
+Qwen 2.5 Coder,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,9.07539200782776,1302.0,1194.0,True,True,True,True,True,True,True,0.0094102334,0.0094102334,,,1
+Qwen 2.5 Coder,stencil,54_stencil_game_of_life,mpi,40.22999572753906,1938.0,1394.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,stencil,54_stencil_game_of_life,serial,26.152854919433594,1693.0,1354.0,True,True,True,True,True,True,True,0.0946821582,0.0946821582,,,1
+Qwen 2.5 Coder,histogram,20_histogram_pixel_histogram,mpi,10.431664943695068,1333.0,1208.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,histogram,20_histogram_pixel_histogram,serial,7.47294020652771,1219.0,1167.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,histogram,24_histogram_count_quartile,mpi,19.945569038391113,1532.0,1272.0,True,True,True,True,True,True,True,0.01364455,0.0293724833333333,1.860370792860682,3.5499008761740036,3
+Qwen 2.5 Coder,histogram,24_histogram_count_quartile,serial,13.714478731155396,1391.0,1230.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,histogram,22_histogram_count_quadrants,mpi,15.986593961715698,1432.0,1230.0,True,True,True,True,True,True,True,0.01273135,0.02899365,2.2208774715216504,4.021333165767966,3
+Qwen 2.5 Coder,histogram,22_histogram_count_quadrants,serial,12.700549125671388,1348.0,1189.0,True,True,True,True,True,True,True,0.0435765418,0.0435765418,,,1
+Qwen 2.5 Coder,histogram,23_histogram_first_letter_counts,mpi,10.722886085510254,1385.0,1256.0,True,True,True,True,True,True,False,0.0049066,0.0049066,,,1
+Qwen 2.5 Coder,histogram,23_histogram_first_letter_counts,serial,4.383134841918945,1246.0,1215.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,histogram,21_histogram_bin_0-100,mpi,10.63446879386902,1369.0,1239.0,True,True,True,True,True,True,True,0.00314485,0.0039238499999999,1.5866390812869178,1.6826239725265115,3
+Qwen 2.5 Coder,histogram,21_histogram_bin_0-100,serial,7.165304899215698,1274.0,1198.0,True,True,True,True,True,True,True,0.0050534166,0.0050534166,,,1
+Qwen 2.5 Coder,search,39_search_xor_contains,mpi,16.312525987625122,1416.0,1208.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,39_search_xor_contains,serial,5.4842610359191895,1219.0,1168.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,37_search_find_the_closest_number_to_pi,mpi,29.20439887046814,1562.0,1170.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,37_search_find_the_closest_number_to_pi,serial,9.472556114196776,1243.0,1132.0,True,True,True,True,True,True,True,2.5e-08,2.5e-08,,,1
+Qwen 2.5 Coder,search,38_search_find_the_first_even_number,mpi,14.744887113571169,1367.0,1181.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,38_search_find_the_first_even_number,serial,6.037934064865112,1205.0,1142.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,35_search_search_for_last_struct_by_key,mpi,16.9841148853302,1405.0,1191.0,True,True,True,True,True,True,True,0.0013518,0.001723,1.639103982300885,1.7538097351679245,3
+Qwen 2.5 Coder,search,35_search_search_for_last_struct_by_key,serial,6.402403116226196,1221.0,1154.0,True,True,True,True,True,True,True,4.14e-08,4.14e-08,,,1
+Qwen 2.5 Coder,search,36_search_check_if_array_contains_value,mpi,11.092605829238892,1303.0,1171.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,search,36_search_check_if_array_contains_value,serial,4.494814872741699,1174.0,1133.0,True,True,True,True,True,True,True,0.0010221668,0.0010221668,,,1
+Qwen 2.5 Coder,fft,05_fft_inverse_fft,mpi,16.078487873077393,1470.0,1266.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,05_fft_inverse_fft,serial,11.310715198516846,1360.0,1226.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,fft,08_fft_split_fft,mpi,35.47195076942444,1734.0,1255.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,08_fft_split_fft,serial,27.351665019989017,1575.0,1215.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,07_fft_fft_conjugate,mpi,43.57800102233887,1816.0,1228.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,07_fft_fft_conjugate,serial,24.650257110595703,1516.0,1188.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,fft,09_fft_fft_out_of_place,mpi,32.948561906814575,1653.0,1211.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,09_fft_fft_out_of_place,serial,19.44209599494934,1444.0,1192.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,fft,06_fft_dft,mpi,16.805902004241943,1356.0,1145.0,True,True,True,True,True,True,True,0.0203184,0.0273899,1.7121722182849044,1.2854814929774192,3
+Qwen 2.5 Coder,fft,06_fft_dft,serial,12.4930579662323,1260.0,1126.0,True,True,True,True,True,True,True,0.0345882582,0.0345882582,,,1
+Qwen 2.5 Coder,scan,33_scan_reverse_prefix_sum,mpi,27.94060206413269,1568.0,1198.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,scan,33_scan_reverse_prefix_sum,serial,11.250033140182495,1219.0,1158.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,scan,30_scan_prefix_sum,mpi,26.999512910842896,1515.0,1158.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,scan,30_scan_prefix_sum,serial,5.89819598197937,1180.0,1119.0,True,True,True,True,True,True,True,0.0107490168,0.0107490168,,,1
+Qwen 2.5 Coder,scan,34_scan_largest_contiguous_subarray_sum,mpi,13.760134220123293,1375.0,1205.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,scan,34_scan_largest_contiguous_subarray_sum,serial,8.346278190612793,1257.0,1167.0,True,True,True,True,True,True,True,1.68e-08,1.68e-08,,,1
+Qwen 2.5 Coder,scan,32_scan_sum_of_prefix_sum_array,mpi,22.366997957229614,1414.0,1134.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,scan,32_scan_sum_of_prefix_sum_array,serial,6.315531015396118,1167.0,1097.0,True,True,True,True,True,False,False,,,,,0
+Qwen 2.5 Coder,scan,31_scan_scan_with_min_function,mpi,19.578852891921997,1472.0,1215.0,True,True,True,True,False,False,False,,,,,0
+Qwen 2.5 Coder,scan,31_scan_scan_with_min_function,serial,6.345562219619751,1242.0,1175.0,True,True,True,True,True,True,True,0.0074312916,0.0074312916,,,1
+Qwen 2.5 Coder,graph,17_graph_highest_degree,mpi,12.979642868041992,1350.0,1194.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,17_graph_highest_degree,serial,8.520242929458618,1254.0,1155.0,True,True,True,True,True,True,True,3.32e-08,3.32e-08,,,1
+Qwen 2.5 Coder,graph,16_graph_largest_component,mpi,27.296644926071167,1558.0,1194.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,16_graph_largest_component,serial,14.124142169952393,1326.0,1155.0,True,True,True,True,True,True,True,0.1027371164,0.1027371164,,,1
+Qwen 2.5 Coder,graph,19_graph_shortest_path,mpi,34.47280478477478,1677.0,1213.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,19_graph_shortest_path,serial,15.172152042388916,1363.0,1172.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,15_graph_edge_count,mpi,15.631465911865234,1381.0,1188.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,15_graph_edge_count,serial,6.140239000320435,1212.0,1149.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,18_graph_count_components,mpi,24.46193790435791,1516.0,1192.0,True,False,True,False,False,False,False,,,,,0
+Qwen 2.5 Coder,graph,18_graph_count_components,serial,11.868631839752195,1297.0,1152.0,True,True,True,True,True,True,True,0.1085106416,0.1085106416,,,1
+deepseek_coder_v2lite,geometry,13_geometry_closest_pair_2d,mpi,4.135987758636475,1644.0,1389.0,True,True,True,True,True,True,True,0.087763,0.1883876666666666,2.21169611730562,3.745949887765915,3
+deepseek_coder_v2lite,geometry,13_geometry_closest_pair_2d,serial,2.7939438819885254,1495.0,1343.0,True,True,True,True,True,True,True,9.16e-08,9.16e-08,,,1
+deepseek_coder_v2lite,geometry,11_geometry_convex_hull_perimeter,mpi,4.073138952255249,1694.0,1402.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,geometry,11_geometry_convex_hull_perimeter,serial,17.59954023361206,2099.0,1356.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,geometry,12_geometry_smallest_triangle,mpi,8.636667251586914,1664.0,1370.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,geometry,12_geometry_smallest_triangle,serial,12.52774691581726,1528.0,1345.0,True,True,True,True,True,True,True,3.34e-08,3.34e-08,,,1
+deepseek_coder_v2lite,geometry,14_geometry_closest_pair_1d,mpi,6.2194530963897705,1635.0,1293.0,True,True,True,True,True,True,True,0.0230701,0.0397283666666666,1.6746606410391982,2.6085539291117072,3
+deepseek_coder_v2lite,geometry,14_geometry_closest_pair_1d,serial,3.134513139724731,1429.0,1269.0,True,True,True,True,True,True,True,0.2363389418,0.2363389418,,,1
+deepseek_coder_v2lite,geometry,10_geometry_convex_hull,mpi,5.247241973876953,1776.0,1376.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,geometry,10_geometry_convex_hull,serial,6.412745952606201,1817.0,1331.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,59_transform_map_function,mpi,8.21578311920166,1566.0,1354.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,59_transform_map_function,serial,2.7616848945617676,1372.0,1306.0,True,True,True,True,True,True,True,0.006075425,0.006075425,,,1
+deepseek_coder_v2lite,transform,57_transform_inverse_offset,mpi,3.994060039520264,1539.0,1313.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,57_transform_inverse_offset,serial,4.716785907745361,1326.0,1267.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,55_transform_relu,mpi,4.9108521938323975,1525.0,1342.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,55_transform_relu,serial,4.564824104309082,1333.0,1296.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,56_transform_negate_odds,mpi,3.44541597366333,1523.0,1322.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,56_transform_negate_odds,serial,2.915390968322754,1350.0,1276.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,58_transform_squaring,mpi,3.2472691535949707,1468.0,1295.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,transform,58_transform_squaring,serial,8.733095169067383,1274.0,1249.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,reduce,26_reduce_product_of_inverses,mpi,6.724275827407837,1493.0,1317.0,True,True,True,True,True,True,True,0.0071219,0.0141983333333333,1.7674658095319826,3.181061233659557,3
+deepseek_coder_v2lite,reduce,26_reduce_product_of_inverses,serial,4.523665904998779,1356.0,1273.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,reduce,27_reduce_average,mpi,10.950135231018066,1451.0,1301.0,True,True,True,True,True,True,True,0.0237714,0.0255552666666666,0.9559723640926238,0.8481243890082132,3
+deepseek_coder_v2lite,reduce,27_reduce_average,serial,3.1306509971618652,1321.0,1258.0,True,True,True,True,True,True,True,0.0237843668,0.0237843668,,,1
+deepseek_coder_v2lite,reduce,28_reduce_smallest_odd_number,mpi,3.5254859924316406,1473.0,1315.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,reduce,28_reduce_smallest_odd_number,serial,3.1072301864624023,1396.0,1273.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,reduce,25_reduce_xor,mpi,4.189304828643799,1474.0,1272.0,True,True,True,True,True,True,False,0.0244614,0.0244614,,,1
+deepseek_coder_v2lite,reduce,25_reduce_xor,serial,3.8966667652130127,1292.0,1230.0,True,True,True,True,True,True,True,0.0063309668,0.0063309668,,,1
+deepseek_coder_v2lite,reduce,29_reduce_sum_of_min_of_pairs,mpi,4.545431852340698,1536.0,1358.0,True,True,True,True,True,True,True,0.014158,0.0222152833333333,2.1652210764232236,1.404098906912354,3
+deepseek_coder_v2lite,reduce,29_reduce_sum_of_min_of_pairs,serial,3.336132049560547,1421.0,1313.0,True,True,True,True,True,True,True,0.0265840918,0.0265840918,,,1
+deepseek_coder_v2lite,dense_la,00_dense_la_lu_decomp,mpi,5.227386951446533,1703.0,1339.0,True,True,True,True,True,True,True,0.191588,1.4269718000000002,0.1380278219848289,0.0709246743146714,3
+deepseek_coder_v2lite,dense_la,00_dense_la_lu_decomp,serial,4.340252161026001,1538.0,1293.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,dense_la,04_dense_la_gemv,mpi,4.566843032836914,1600.0,1362.0,True,True,True,True,True,True,False,0.0438184,0.0438184,,,1
+deepseek_coder_v2lite,dense_la,04_dense_la_gemv,serial,2.5147671699523926,1395.0,1314.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,dense_la,02_dense_la_gemm,mpi,8.198349952697754,1990.0,1392.0,True,True,True,True,False,True,False,0.010534,0.010534,,,1
+deepseek_coder_v2lite,dense_la,02_dense_la_gemm,serial,3.712630033493042,1460.0,1344.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,dense_la,01_dense_la_solve,mpi,5.9701831340789795,1721.0,1356.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,dense_la,01_dense_la_solve,serial,7.211446046829224,1825.0,1308.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,dense_la,03_dense_la_axpy,mpi,3.1661219596862793,1513.0,1340.0,True,True,True,True,True,True,True,0.0410182,0.1718381166666666,0.3946926804484798,0.1106889556475905,3
+deepseek_coder_v2lite,dense_la,03_dense_la_axpy,serial,2.2693328857421875,1394.0,1292.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,41_sort_k-th_smallest_element,mpi,5.031097173690796,1645.0,1299.0,True,True,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,41_sort_k-th_smallest_element,serial,4.350913047790527,1379.0,1255.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,43_sort_sort_an_array_of_structs_by_key,mpi,5.786118268966675,1720.0,1380.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,43_sort_sort_an_array_of_structs_by_key,serial,2.7653627395629883,1378.0,1334.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,44_sort_sort_non-zero_elements,mpi,5.176817893981934,1629.0,1330.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,sort,44_sort_sort_non-zero_elements,serial,3.773773908615112,1395.0,1283.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,mpi,5.182754039764404,1724.0,1372.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,40_sort_sort_an_array_of_complex_numbers_by_magnitude,serial,2.1305220127105713,1383.0,1326.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,42_sort_sorted_ranks,mpi,5.145022869110107,1701.0,1378.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sort,42_sort_sorted_ranks,serial,4.1069629192352295,1546.0,1332.0,True,True,True,True,True,True,True,0.012970092,0.012970092,,,1
+deepseek_coder_v2lite,sparse_la,46_sparse_la_spmm,mpi,3.7835960388183594,1626.0,1414.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,46_sparse_la_spmm,serial,4.793009042739868,1603.0,1366.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,47_sparse_la_spmv,mpi,3.989169120788574,1657.0,1422.0,True,True,True,True,True,True,False,0.0025738,0.0025738,,,1
+deepseek_coder_v2lite,sparse_la,47_sparse_la_spmv,serial,3.52585768699646,1501.0,1372.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,48_sparse_la_sparse_axpy,mpi,4.25885009765625,1688.0,1412.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,48_sparse_la_sparse_axpy,serial,3.889806032180786,1487.0,1364.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,45_sparse_la_sparse_solve,mpi,6.754885196685791,1828.0,1376.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,45_sparse_la_sparse_solve,serial,3.437001943588257,1466.0,1328.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,49_sparse_la_sparse_lu_decomp,mpi,8.562000036239624,2115.0,1422.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,sparse_la,49_sparse_la_sparse_lu_decomp,serial,7.390938997268677,1818.0,1374.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,50_stencil_xor_kernel,mpi,8.211261749267578,2060.0,1446.0,True,True,True,True,True,True,False,0.0671046,0.0671046,,,1
+deepseek_coder_v2lite,stencil,50_stencil_xor_kernel,serial,3.0879430770874023,1592.0,1399.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,51_stencil_edge_kernel,mpi,9.233819246292114,2326.0,1557.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,stencil,51_stencil_edge_kernel,serial,4.347024917602539,1733.0,1508.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,53_stencil_2d_jacobi_5-point_stencil,mpi,7.455260992050171,2001.0,1480.0,True,True,True,True,True,True,False,0.08139,0.08139,,,1
+deepseek_coder_v2lite,stencil,53_stencil_2d_jacobi_5-point_stencil,serial,7.239788055419922,1883.0,1433.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,52_stencil_1d_jacobi_3-point_stencil,mpi,6.145175933837891,1831.0,1397.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,52_stencil_1d_jacobi_3-point_stencil,serial,4.468524932861328,1483.0,1350.0,True,True,True,True,True,True,True,0.020076,0.020076,,,1
+deepseek_coder_v2lite,stencil,54_stencil_game_of_life,mpi,8.124150037765503,2089.0,1566.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,stencil,54_stencil_game_of_life,serial,5.527437210083008,1861.0,1520.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,histogram,20_histogram_pixel_histogram,mpi,3.991224765777588,1518.0,1364.0,True,True,True,True,True,True,False,0.0032418,0.0032418,,,1
+deepseek_coder_v2lite,histogram,20_histogram_pixel_histogram,serial,2.1909329891204834,1342.0,1317.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,histogram,24_histogram_count_quartile,mpi,4.77669620513916,1719.0,1430.0,True,True,True,True,True,True,True,0.02378575,0.05061325,2.1033162399790615,3.648840166906656,3
+deepseek_coder_v2lite,histogram,24_histogram_count_quartile,serial,5.939435005187988,1504.0,1382.0,True,True,True,True,True,True,True,0.0848284332,0.0848284332,,,1
+deepseek_coder_v2lite,histogram,22_histogram_count_quadrants,mpi,4.247654914855957,1673.0,1389.0,True,True,True,True,True,True,False,0.0573504,0.0573504,,,1
+deepseek_coder_v2lite,histogram,22_histogram_count_quadrants,serial,3.1180362701416016,1508.0,1342.0,True,True,True,True,True,True,True,0.0586872334,0.0586872334,,,1
+deepseek_coder_v2lite,histogram,23_histogram_first_letter_counts,mpi,3.377101182937622,1587.0,1411.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,histogram,23_histogram_first_letter_counts,serial,2.457379102706909,1407.0,1364.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,histogram,21_histogram_bin_0-100,mpi,3.745824098587036,1613.0,1393.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,histogram,21_histogram_bin_0-100,serial,2.893483877182007,1407.0,1346.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,39_search_xor_contains,mpi,5.033216953277588,1609.0,1362.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,39_search_xor_contains,serial,2.3165879249572754,1416.0,1316.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,37_search_find_the_closest_number_to_pi,mpi,4.398663282394409,1582.0,1324.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,37_search_find_the_closest_number_to_pi,serial,5.568962812423706,1435.0,1280.0,True,True,True,True,True,True,True,5e-08,5e-08,,,1
+deepseek_coder_v2lite,search,38_search_find_the_first_even_number,mpi,4.432875156402588,1534.0,1335.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,38_search_find_the_first_even_number,serial,2.770296812057495,1391.0,1290.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,35_search_search_for_last_struct_by_key,mpi,3.2414541244506836,1547.0,1351.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,35_search_search_for_last_struct_by_key,serial,2.2008650302886963,1397.0,1308.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,36_search_check_if_array_contains_value,mpi,2.6425349712371826,1467.0,1323.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,search,36_search_check_if_array_contains_value,serial,1.963698148727417,1318.0,1279.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,05_fft_inverse_fft,mpi,5.875576019287109,1840.0,1429.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,05_fft_inverse_fft,serial,3.71111798286438,1504.0,1383.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,08_fft_split_fft,mpi,4.923035144805908,1737.0,1411.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,08_fft_split_fft,serial,3.847356081008911,1568.0,1365.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,07_fft_fft_conjugate,mpi,5.185296058654785,1786.0,1382.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,fft,07_fft_fft_conjugate,serial,4.887662172317505,1696.0,1336.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,09_fft_fft_out_of_place,mpi,5.352123022079468,1722.0,1366.0,True,True,True,True,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,09_fft_fft_out_of_place,serial,4.866344928741455,1652.0,1342.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,06_fft_dft,mpi,4.77333402633667,1586.0,1298.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,fft,06_fft_dft,serial,3.8180317878723145,1420.0,1274.0,True,True,True,True,True,False,False,,,,,0
+deepseek_coder_v2lite,scan,33_scan_reverse_prefix_sum,mpi,4.617210865020752,1648.0,1354.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,33_scan_reverse_prefix_sum,serial,2.969849109649658,1404.0,1308.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,30_scan_prefix_sum,mpi,6.490025997161865,1610.0,1311.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,30_scan_prefix_sum,serial,3.460361957550049,1356.0,1266.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,34_scan_largest_contiguous_subarray_sum,mpi,9.192867994308472,1610.0,1365.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,34_scan_largest_contiguous_subarray_sum,serial,3.0711002349853516,1426.0,1321.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,32_scan_sum_of_prefix_sum_array,mpi,6.757018089294434,1673.0,1285.0,True,True,True,True,False,True,False,0.0223408,0.0223408,,,1
+deepseek_coder_v2lite,scan,32_scan_sum_of_prefix_sum_array,serial,4.298583030700684,1408.0,1242.0,True,True,True,True,True,True,True,0.0216111248,0.0216111248,,,1
+deepseek_coder_v2lite,scan,31_scan_scan_with_min_function,mpi,5.137488842010498,1659.0,1371.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,scan,31_scan_scan_with_min_function,serial,2.081719875335694,1412.0,1325.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,17_graph_highest_degree,mpi,3.32662296295166,1562.0,1347.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,17_graph_highest_degree,serial,2.6637561321258545,1448.0,1302.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,16_graph_largest_component,mpi,7.06224799156189,1907.0,1347.0,True,True,True,True,True,True,False,0.2000626,0.2000626,,,1
+deepseek_coder_v2lite,graph,16_graph_largest_component,serial,6.4957520961761475,1819.0,1302.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,19_graph_shortest_path,mpi,5.224894762039185,1752.0,1365.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,19_graph_shortest_path,serial,4.485267162322998,1585.0,1318.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,15_graph_edge_count,mpi,3.859984159469605,1555.0,1343.0,True,True,True,True,True,True,True,0.0421539,0.0765959666666666,1.7131285263556677,2.8105631981856956,3
+deepseek_coder_v2lite,graph,15_graph_edge_count,serial,2.292372941970825,1410.0,1298.0,True,False,True,False,False,False,False,,,,,0
+deepseek_coder_v2lite,graph,18_graph_count_components,mpi,7.2741007804870605,1825.0,1345.0,True,True,True,True,False,True,False,0.1571338,0.1571338,,,1
+deepseek_coder_v2lite,graph,18_graph_count_components,serial,4.54427695274353,1569.0,1299.0,True,False,True,False,False,False,False,,,,,0
