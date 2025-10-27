@@ -330,7 +330,7 @@ Across rule families, **H2LooP Code-Sanitizr (Beta)** maintained consistent rule
 - Peak performance on pointer (11.x, 18.x) and control (15.x) families  
 - Stable initialization behavior and low character delta (≈ 12 %)  
 
-**Takeaway:** The compact H2LooP model demonstrates domain-specific rule generalization comparable to large frontier language models, emphasizing its potential as a specialized, efficient MISRA code-correction engine.
+**Takeaway:** The compact H2LooP model demonstrates domain-specific rule generalization comparable to domain experts, emphasizing its potential as a specialized, efficient MISRA code-correction engine.
 
 
 ## 5. Head to head code comparsion
