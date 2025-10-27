@@ -14,7 +14,7 @@
 
 ---
 
-MISRA rules are a set of coding standards developed by the Motor Industry Software Reliability Association (MISRA) to ensure safety, security, and reliability in software systems, particularly in embedded systems for the automotive and other industries. We have a developed in-house trained Small Language Model (SLM) - H2LooP Code-Sanitizr (currently in beta) which takes in your non-compliant C code and transforms it into the compliant one within seconds.
+MISRA rules are a set of coding standards developed by the Motor Industry Software Reliability Association (MISRA) to ensure safety, security, and reliability in software systems, particularly in embedded systems for the automotive and other industries. We have developed an in-house trained Small Language Model (SLM) - H2LooP Code-Sanitizr (currently in beta) which takes in your non-compliant C code and transforms it into the compliant one within seconds.
 
 This report benchmarks multiple language models, ranging from large-scale frontier Gemini variants to compact Small Language Models (SLMs) like Gemma-4B, and the specialized H2LooP Code-Sanitizr (Beta), on the automatic correction of C code violating MISRA C:2012 rules. The goal is to assess how effectively compact, domain-specialized SLMs can deliver safe, rule-aware code corrections comparable to more than 100x larger models - particularly for safety-critical automotive and embedded systems where MISRA compliance is mandatory, without exposing your codebase or IP to cloud LLM providers. 
 
@@ -40,7 +40,7 @@ Models were provided with incorrect C code snippets and MISRA C:2012 rule violat
 ### H2LooP Toolchain
 
 - The H2LooP Toolchain is an integral component of the evaluation pipeline.
-- Its primary role is to process raw C source files, utilizing AST to **accurately locate and extract** the target erroneous functions. It then identifies and maps the  MISRA C:2012 rule violations within that function(s).
+- Its primary role is to process raw C source files, utilizing AST to **accurately locate and extract** the target erroneous functions. It then identifies and maps the MISRA C:2012 rule violations within that function(s).
 
 ---
 
@@ -48,7 +48,7 @@ Models were provided with incorrect C code snippets and MISRA C:2012 rule violat
 
 | Model | Description |
 |--------|----------------|
-| **H2LooP Code-Sanitizr (Beta)*** | Lightweight model trained within the H2LooP framework to automatically correct and sanitize C code for MISRA C 2012 compliance. |
+| **H2LooP Code-Sanitizr (Beta)** | Lightweight model trained within the H2LooP framework to automatically correct and sanitize C code for MISRA C 2012 compliance. |
 | **Expert Corrected Code** | Manually corrected by domain experts. |
 | **Gemini 2.5 Flash (with H2LooP Toolchain)** | Flagship workhorse model from Google integrated with the H2LooP rule-aware toolchain. |
 | **Gemini 2.5 Flash (without H2LooP Toolchain)** | Same model evaluated without external rule context. |
@@ -112,7 +112,7 @@ Overall, the plot reinforces that **domain-specialized adaptation can yield near
 **Insights:**  
 - **Gemini models** generally perform broader, higher-magnitude edits (20–30%), indicating more aggressive rewrites.  
 - The **H2LooP Code-Sanitizr (Beta)** shows a compact edit footprint (**~12% delta**), closer to the expert baseline (**12.7%**), implying targeted and efficient corrections, just like the domain experts.  
-- **Gemma3-4B ** models, both with and without the H2LooP toolchain, make minimal modifications, often insufficient to correct rule violations.  
+- **Gemma3-4B** models, both with and without the H2LooP toolchain, make minimal modifications, often insufficient to correct rule violations.  
 
 ### Normalized Performance and Efficiency Indices (0–100 Scale)
 
@@ -242,7 +242,7 @@ Each rule family addresses a distinct safety or reliability concern in C program
 | 10.3 | 100.00 | 100.00 | 100.00 | **63.00** | 12.00 |
 | 10.4 | 93.00 | 80.00 | 80.00 | **67.00** | –20.00 |
 
-*Insight:* H2LooP Code Sanitizr exhibited balanced correction under strong typing constraints, closely approximating Gemini's ~70% fix rate while avoiding aggressive code rewrites.
+*Insight:* H2LooP Code-Sanitizr exhibited balanced correction under strong typing constraints, closely approximating Gemini's ~70% fix rate while avoiding its aggressive code rewrites.
 
 ---
 
@@ -328,9 +328,9 @@ Across rule families, **H2LooP Code-Sanitizr (Beta)** maintained consistent rule
 
 - Average fix rate ≈ 0.70 of expert corrections  
 - Peak performance on pointer (11.x, 18.x) and control (15.x) families  
-- Stable initialization behavior and low character delta (≈ 12 %)  
+- Stable initialization behavior and low character delta (≈ 12%)  
 
-**Takeaway:** The compact H2LooP model demonstrates domain-specific rule generalization comparable to domain experts, emphasizing its potential as a specialized, efficient MISRA code-correction engine.
+**Takeaway:** The compact H2LooP model demonstrates domain-specific rule generalization comparable to large frontier language models, emphasizing its potential as a specialized, efficient MISRA code-correction engine.
 
 
 ## 5. Head to head code comparison
@@ -769,7 +769,7 @@ static void phCtlTagLib_SystemDebugDump(void)
 * Rule 1.3 — symbol 'wTechnologyMask' is not a member of 'phCtlTagLib_InternalState_t'
 * Rule 21.6 — macro 'snprintf' is deprecated.
 * Rule 9.1 — 'iRet' is likely uninitialized
-* Rule 21.8 — "function 'system' is deprecated.
+* Rule 21.8 — function 'system' is deprecated.
 
 
 
@@ -881,14 +881,14 @@ Based on the aggregate and rule-wise performance analysis in the report, here ar
 
 ### 6. Conclusions
 
-* **H2LooP Code-Sanitizr's Competitive Efficiency:** The specialized **H2LooP Code-Sanitizr (Beta)** delivers strong  performance. It achieves a **Performance Index of approx 43** and an **Efficiency Index of approx 67** against the top-performing model, demonstrating significant capability for a compact solution. Critically, it maintains a compact edit footprint (approx 12.34% character delta), which is close to the expert baseline ($12.71\%$), indicating it produces safe, rule-conformant code with minimal, targeted, and interpretable edits.
+* **H2LooP Code-Sanitizr's Competitive Efficiency:** The specialized **H2LooP Code-Sanitizr (Beta)** delivers strong performance. It achieves a **Performance Index of approx 43** and an **Efficiency Index of approx 67** against the top-performing model, demonstrating significant capability for a compact solution. Critically, it maintains a compact edit footprint (approx 12.34% character delta), which is close to the expert baseline ($12.71\%$), indicating it produces safe, rule-conformant code with minimal, targeted, and interpretable edits.
 
-* **Domain-Specific Adaptation Outperforms Generic SLMs:** The **Gemma3-4B** model, whether used with or without the H2LooP toolchain, serves as a comparable compact SLM benchmark, demonstrating limited inherent rule awareness and minimal ability to self-correct (Average Errors Solved: $-0.05$ to $0.00$). This outcome underscores that **domain-specific finetuning**, as seen with the Sanitizr model, is essential to achieve meaningful compliance improvements in safety-critical code.
+* **Domain-Specific Adaptation Outperforms Generic SLMs:** The **Gemma3-4B** model, whether used with or without the H2LooP toolchain, serves as a comparable compact SLM benchmark, demonstrating limited inherent rule awareness and minimal ability to self-correct (Average Errors Solved: $-0.05$ to $0.00$). This outcome underscores that **domain-specific fine-tuning**, as seen with the Sanitizr model, is essential to achieve meaningful compliance improvements in safety-critical code.
 
 * **Varying Rule Difficulty and Model Strengths:** Pointer-related rules (11.x, 18.x) and control-flow rules (15.x) remain the most challenging. While the most capable model remains generally unmatched in handling complex pointer logic, the Sanitizr showed promising gains, achieving $1.00$ fix rates on multiple sub-rules within these families, like 11.6, 11.7, 11.9, 18.1, 18.3, 18.7, and 18.8.
 
 * **Correlation of Edit-Efficiency and Safety:** Edit-efficiency correlates inversely with correction magnitude. Models making smaller, focused edits ($\le 15\%$ character delta) consistently demonstrate a higher efficiency-to-edit ratio, which is crucial for safety-critical systems where uncontrolled, aggressive rewrites (seen in some large LLM variants with $20–30\%$ delta) are discouraged.
 
-* **Locally Deployable Compliance Automation:** Compact, rule-aware models like Sanitizr demonstrate that domain-specific adaptation can meaningfully bridge the gap between massive Large Language Models (LLMs) and deployable, cost-efficient Small Language Models (SLMs) for safety compliance. The specialized training allows the compact model to achieve near-top-tier reliability without the massive computational overhead and size. These models can be deployed on local premise, without the users compromising their IP.
+* **Locally Deployable Compliance Automation:** Compact, rule-aware models like Sanitizr demonstrate that domain-specific adaptation can meaningfully bridge the gap between massive Large Language Models (LLMs) and deployable, cost-efficient Small Language Models (SLMs) for safety compliance. The specialized training allows the compact model to achieve near-top-tier reliability without the massive computational overhead and size. These models can be deployed on-premises, without the users compromising their IP.
 
 ---
