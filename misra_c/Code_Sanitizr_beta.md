@@ -57,7 +57,7 @@ Models were provided with incorrect C code snippets and MISRA C:2012 rule violat
 | **Gemma3-4B (with/without H2LooP Toolchain)** | Compact model serving as the similarly sized comparable SLM to ours. |
 
 
-H2LooP Code-Sanitizr (Beta): It's a compact rule-aware model trained within the H2LooP framework to automatically identify MISRA errors with its toolchain, make corrections and leave a brief comment on the resoning behind the change, with minimal code edits. Designed for interpretable, fine-grained compliance correction. 
+H2LooP Code-Sanitizr (Beta): It's a compact rule-aware model trained within the H2LooP framework to automatically identify MISRA errors with its toolchain, make corrections and leave a brief comment on the reasoning behind the change, with minimal code edits. Designed for interpretable, fine-grained compliance correction. 
 
 Please note, H2LooP Code-Sanitizr (Beta) is also referred to as Sanitizr or H2LooP Code-Sanitizr throughout this report.
 
@@ -111,7 +111,7 @@ Overall, the plot reinforces that **domain-specialized adaptation can yield near
 
 **Insights:**  
 - **Gemini models** generally perform broader, higher-magnitude edits (20–30%), indicating more aggressive rewrites.  
-- The **H2LooP Code-Sanitizr (Beta)** shows a compact edit footprint (**~8% delta**), closer to the expert baseline (**12.7%**), implying targeted and efficient corrections, just like the domain experts.  
+- The **H2LooP Code-Sanitizr (Beta)** shows a compact edit footprint (**~12% delta**), closer to the expert baseline (**12.7%**), implying targeted and efficient corrections, just like the domain experts.  
 - **Gemma3-4B ** models, both with and without the H2LooP toolchain, make minimal modifications, often insufficient to correct rule violations.  
 
 ### Normalized Performance and Efficiency Indices (0–100 Scale)
@@ -178,7 +178,7 @@ Efficiency Index = normalize(solved / char_delta*param_size)₀₋₁₀₀ -->
 **Interpretation:**
 - H2LooP Code-Sanitizr achieves **≈ 43% of the absolute correction capability** relative to the top-performing model's ceiling (100). Critically, it operates with an efficiency score that is **over 80 times higher** (66.8 vs 0.8) than the highest-performing model, demonstrating superior value and deployability.
 - While the highest-performing models achieve greater absolute accuracy, their large parameter size and/or code edit footprints render them significantly less efficient according to the defined metric. The Sanitizr uniquely balances **precision, minimal code alteration, and its compact size**.
-- **Gemma3-4B** as similarly sized model occupies the lower bound of both indices, highlighting minimal correction ability and speaks to domain adaptaion of Sanitizr.
+- **Gemma3-4B** as similarly sized model occupies the lower bound of both indices, highlighting minimal correction ability and speaks to domain adaptation of Sanitizr.
 
 ---
 
@@ -226,7 +226,7 @@ Each rule family addresses a distinct safety or reliability concern in C program
 |------|---------:|------------:|--------:|--------------------------------:|-----------:|
 | 9.4 | 100.00 | 100.00 | 100.00 | **100.00** | 0.00 |
 
-*Insight:* Initialization rules are well learned even by Sanitizr, reliably enforced one-time initialization (Rule 9.4) while occasionally under-correcting aggregate initializers.
+*Insight:* Initialization rules are well learned even by Sanitizr, which reliably enforced one-time initialization (Rule 9.4) while occasionally under-correcting aggregate initializers.
 
 ---
 
@@ -333,7 +333,7 @@ Across rule families, **H2LooP Code-Sanitizr (Beta)** maintained consistent rule
 **Takeaway:** The compact H2LooP model demonstrates domain-specific rule generalization comparable to large frontier language models, emphasizing its potential as a specialized, efficient MISRA code-correction engine.
 
 
-## 5. Head to head code comparsion
+## 5. Head to head code comparison
 
 ### Sample 1 — Major MISRA Compliance Improvement
 
@@ -822,7 +822,7 @@ static void phCtlTagLib_SystemDebugDump(void)
 **Remaining MISRA Violations (Gemini Output):**
 
 
-* Rule 4.10: header file 'stdlib.h' repeatedly included but has no \n    header guard
+* Rule 4.10: header file 'stdlib.h' repeatedly included but has no header guard
 ---
 
 
