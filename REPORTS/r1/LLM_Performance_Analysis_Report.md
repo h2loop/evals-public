@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This report presents a comprehensive analysis of Large Language Model (LLM) performance on parallel code generation tasks, with particular focus on the H2Loop v0.1 model. The evaluation encompasses 10 different models across 12 computational domains, testing both serial and MPI parallel implementations.
+This report presents a comprehensive analysis of Large Language Model (LLM) performance on parallel code generation tasks, with particular focus on the H2Loop v0.1 model. The evaluation encompasses 10 different models across 12 mathematical and computational domains, testing both serial and MPI parallel implementations.
 
 ## 1. Performance Analysis Results
 
