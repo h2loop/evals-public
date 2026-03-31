@@ -30,102 +30,24 @@
 
 ## Markdown Questions
 
-### Query 1: If multiple ingress queues are configured with different sorting types, how is a received Ethernet frame assigned, and what happens if no match is found?
+### Query 1: In indirect transmission, what uniquely identifies a transmission request across API calls, and which APIs participate in the lifecycle including confirmation?
 
-**Format:** md · **Cross-doc:** No
+**Format:** markdown · **Cross-doc:** No
 
 **Ground Truth:**
-> Assignment is based on EthCtrlConfigIngressQueueSortingType applied in order of EthCtrlConfigIngressQueueSortingPriority. If no match is found, the frame is dropped and ETH_E_NO_MATCHING_INGRESS_QUEUE_IDENTIFIED is reported.
+> There are 11 SCB blocks: SCB0 (0x40600000), SCB1 (0x40610000), SCB2 (0x40620000), SCB3 (0x40630000), SCB4 (0x40640000), SCB5 (0x40650000), SCB6 (0x40660000), SCB7 (0x40670000), SCB8 (0x40680000), SCB9 (0x40690000), and SCB10 (0x406A0000), spanning the address range 0x40600000–0x406A0000.
 
 | System | Correctness | Completeness | No-Halluc | Relevance | Composite |
 |--------|-------------|--------------|-----------|-----------|-----------|
-| KG 2.0 | 0.5 | 0.5 | 1.0 | 0.5 | 0.625 |
-| KG 1.0 | 0.5 | 0.5 | 0.0 | 0.5 | 0.375 |
-| Naive RAG | 1.0 | 1.0 | 1.0 | 1.0 | 1.000 |
+| KG 2.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| KG 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.000 |
+| Naive RAG | 0.5 | 0.5 | 0.5 | 1.0 | 0.625 |
 
 <details>
 <summary>KG 2.0 Output</summary>
 
 ```
-# Ethernet Frame Assignment to Ingress Queues
-
-## Frame Assignment Process with Multiple Sorting Types
-
-When multiple ingress queues are configured with different sorting types, the Ethernet frame assignment process follows a priority-based approach:
-
-### Priority-Based Sorting
-1. **Highest Priority First**: Ethernet frames are sorted according to the EthCtrlConfigIngressQueueSortingType with the highest priority as defined in EthCtrlConfigIngressQueueSortingPriority
-2. **Descending Order**: If no matching queue is found, the system proceeds in descending order with the next sorting EthCtrlConfigIngressQueueSortingType
-3. **Default Queue**: An EthCtrlConfigIngressQueue with no sorting type configured shall always have the lowest priority and can be used as a default ingress queue
-
-### Supported Sorting Criteria
-The following Ethernet frame attributes can be used as sorting criteria:
-- Destination MAC address (EthCtrlIngressQueueSortingMacDestinationAssignment)
-- VLAN-ID (EthCtrlIngressQueueSortingVlanIdAssignment)
-- VLAN priority (EthCtrlIngressQueueSortingVlanPriorityAssignment)
-- EtherType (EthCtrlIngressQueueSortingEtherTypeAssignment)
-
-### Configuration Requirements
-- If an EthCtrlConfigIngress has at least two EthCtrlConfigIngressQueues with different sorting types, a EthCtrlConfigIngressQueueSortingPriority must be configured
-- An Ethernet controller shall have at most one EthCtrlConfigIngressQueue with the same value of EthCtrlConfigIngressQueueSortingType configured
-
-## Hardware-Based Screening Process
-
-The system also implements hardware-based screening for frame assignment:
-
-### Screening Algorithm
-1. The frame is evaluated against the configured screening registers (Type 1 and Type 2)
-2. The screening algorithm uses:
-   - 16 Type 1 screeners for L3/L4 filtering (IP addresses, TCP/UDP ports)
-   - 16 Type 2 screeners for L2 filtering (VLAN, EtherType)
-   - 8 Ether-type match registers (for Type 2 screening)
-   - 32 field compare registers (for Type 2 screening)
-
-### Queue Mapping
-- Up to 3 receive priority queues are supported
-- The screening registers filter and map frames to specific queues in host memory
-
-## Specialized Queue Selection Types
-
-The system supports two main queue selection approaches:
-
-### Frame-Based Selection (ETH_RXQ_SEL_TYPE_FRAME)
-- Frame types are segregated based on hardware-supported frame types:
-  - AV frames (EthMacPortConfigRxQAvRef)
-  - Multicast and Broadcast frames (EthMacPortConfigRxQMulticastBroadcastRef)
-  - PTP frames (EthMacPortConfigRxQPtpRef)
-  - Untagged frames (EthMacPortConfigRxQUntaggedRef)
-
-### VLAN Priority-Based Selection (ETH_RXQ_SEL_TYPE_VLAN_PRIO)
-- Traffic is segregated based on VLAN priority (PCP field)
-- Each priority level (0-7) maps to a specific queue:
-  - Priority 0 frames → EthMacPortConfigRxQPrio0Ref
-  - Priority 1 frames → EthMacPortConfigRxQPrio1Ref
-  - ...and so on up to Priority 7
-
-## Behavior When No Match is Found
-
-### Standard Priority-Based Sorting
-- **Action**: Ethernet frame is dropped
-- **Error Reporting**: If EthDevErrorDetect is set to TRUE, the Ethernet driver calls Det_ReportError with error code ETH_E_NO_MATCHING_INGRESS_QUEUE_IDENTIFIED
-
-### Hardware Screening Approach
-- **Default Behavior**: When a received Ethernet frame does not match any of the configured screening criteria, the frame is assigned to a default receive queue
-- **Queue Structure**: The system supports 1 receive queue using common 4kB memory, with up to 3 DMA channels routing to 3 queues in host memory
-
-### Default Queue Handling
-- **Queue 0 as Default**: Queue 0 must be enabled if there's a possibility that a frame will be received which does not match the frame types configured for all queues
-- **Rationale**: The default queue for reception is queue 0. If traffic segregation is based on frame type and MAC finds any frame type that does not match configured frame types, it routes them to queue 0
-- **DMA Requirement**: A DMA channel should be configured to pick up frames from queue 0
-
-### VLAN ID Filtering Exception
-- Any packets failing VLAN ID filter will be dropped and not routed to any receive queue
-
-## Queue Processing Options
-- **Interrupt driven**: EthCtrlEnableRxInterrupt = TRUE
-- **Mixed approach**: EthCtrlEnableRxInterrupt = FALSE with specific queues having EthCtrlEnableIngressQueueInterrupt = TRUE
-- **Polling with handler functions**: Specific queues configured with EthCtrlConfigIngressQueueHandlerFunction
-- **Polling with main functions**: Queues configured with EthIfPhysCtrlRxMainFunctionIngressProcessing
+There are 11 SCB blocks in total: SCB0 (0x40600000), SCB1 (0x40610000), SCB2 (0x40620000), SCB3 (0x40630000), SCB4 (0x40640000), SCB5 (0x40650000), SCB6 (0x40660000), SCB7 (0x40670000), SCB8 (0x40680000), SCB9 (0x40690000), and SCB10 (0x406A0000).
 ```
 
 </details>
@@ -134,7 +56,7 @@ The system supports two main queue selection approaches:
 <summary>KG 1.0 Output</summary>
 
 ```
-In AUTOSAR Ethernet Driver ingress handling, received frames are assigned to ingress queues by applying configured sorting filters (e.g., destination MAC, VLAN ID, VLAN priority, EtherType) in priority order, where the driver evaluates the highest-priority sorting type first and enqueues the frame into the matching EthCtrlConfigIngressQueue, while frames that match no queue are dropped without error reporting and queue overflow may result in frame discard or overwriting depending on configuration.
+The device has 2 SCB (Serial Communication Block) instances—DW0 (0x40288000, CH_STRUCT0–128) and DW1 (0x40298000, CH_STRUCT0–64)—each with 64-byte channel structures containing control, status, descriptor, interrupt, and SRAM registers, configurable for UART, SPI, and I2C.
 ```
 
 </details>
@@ -143,35 +65,26 @@ In AUTOSAR Ethernet Driver ingress handling, received frames are assigned to ing
 <summary>Naive RAG Output</summary>
 
 ```
-If multiple ingress queues are configured with different sorting types, a received Ethernet frame is assigned to the queue with the **highest priority** (EthCtrlConfigIngressQueueSortingPriority) whose configured sorting type matches the frame's attributes. The matching process follows these steps:
+Based on the memory mapping provided in the context, there are 11 Serial Communication Blocks (SCB) present. They occupy the address range from 0x40600000 to 0x406aFFFF.
 
-1. **Priority-based matching**:  
-   The driver checks the frame against queues in descending order of priority. The queue with the highest priority is evaluated first.
+- The base addresses of the SCBs are:
+  - SCB 0: 0x40600000
+  - SCB 1: 0x40610000
+  - SCB 2: 0x40620000
+  - SCB 3: 0x40630000
+  - SCB 4: 0x40640000
+  - SCB 5: 0x40650000
+  - SCB 6: 0x40660000
+  - SCB 7: 0x40670000
+  - SCB 8: 0x40680000
+  - SCB 9: 0x40690000
+  - SCB 10: 0x406a0000
 
-2. **Attribute matching**:  
-   For each queue, the frame's attributes (e.g., VLAN-ID, EtherType) are compared against the queue's configured sorting type (e.g., `EthCtrlIngressQueueSortingVlanIdAssignment` or `EthCtrlIngressQueueSortingEtherTypeAssignment`).  
-
-3. **Assignment**:  
-   The frame is enqueued in the **first queue** where a match is found.  
-
-4. **No match found**:  
-   If the frame does not match any queue's sorting type, it is **dropped**. If error detection is enabled (`EthDevErrorDetect = TRUE`), the driver reports an error (`ETH_E_NO_MATCHING_INGRESS_QUEUE_IDENTIFIED`).  
-
-**Example**:  
-- Queue A (priority 1): VLAN-ID = `0xOFF`.  
-- Queue B (priority 0): EtherType = `0x22F0`.  
-- A frame with EtherType `0x22F0` → assigned to **Queue B** (higher priority).  
-- A frame with EtherType `0x8100` and VLAN-ID `0xOFF` → assigned to **Queue A** (no match in Queue B).  
-- A frame with EtherType `0x8100` and VLAN-ID `0x001` → **dropped** (no match).  
-
-**Key constraints**:  
-- Queues with identical sorting types (e.g., two queues both using EtherType) are invalid.  
-- A queue without a sorting type must have the **lowest priority**.
+Each SCB has a size of 64KB (0x10000 bytes), resulting in a contiguous address range from 0x40600000 to 0x406aFFFF.
 ```
 
 </details>
 
----
 
 ### Query 2: What initialization dependencies must be satisfied before calling Eth_Init when the controller is on-chip versus off-chip (MACPHY)?
 
@@ -512,222 +425,6 @@ The unique identifier for an indirect transmission request is the buffer index r
 
 ---
 
-### Query 5: Which API functions are allowed to be called before Ethernet Driver initialization, and what error is reported if other APIs are called?
-
-**Format:** markdown · **Cross-doc:** No
-
-**Ground Truth:**
-> Allowed: Eth_Init, Eth_GetVersionInfo, scheduled functions (e.g., Eth_MainFunction) Error: ETH_E_UNINIT reported via Det_ReportError
-
-| System | Correctness | Completeness | No-Halluc | Relevance | Composite |
-|--------|-------------|--------------|-----------|-----------|-----------|
-| KG 2.0 | 0.5 | 1.0 | 0.0 | 0.5 | 0.500 |
-| KG 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.250 |
-| Naive RAG | 0.5 | 0.5 | 0.0 | 1.0 | 0.500 |
-
-<details>
-<summary>KG 2.0 Output</summary>
-
-```
-# Ethernet Driver API Call Restrictions Before Initialization
-
-## Allowed API Functions Before Initialization
-
-The following API functions are explicitly permitted to be called before Ethernet Driver initialization:
-
-### Core Functions
-- **Eth_GetVersionInfo()** - Retrieves version information of the Ethernet driver
-- **Eth_Init()** - Primary initialization function (allowed to initiate initialization)
-- **Eth_MainFunction()** - Scheduled function (returns immediately when uninitialized)
-- **Eth_GetCurrentMduConfig()** - Gets the current MDU (Memory Data Unit) configuration
-- **Eth_17_Leth_Init** - Driver initialization function (vendor-specific)
-- **Eth_17_Leth_GetVersionInfo** - Retrieve driver version information (vendor-specific)
-
-### Time-Related Functions (with caveats)
-- **Eth_GetCurrentTime()** - *Note: Obsoleted requirement*
-- **Eth_GetPhcTime()** - *Note: Requires Eth_Init() according to draft requirement*
-
-## Error Reporting for Unauthorized API Calls
-
-### Error Code
-When API functions (other than those explicitly allowed) are called before Ethernet Driver initialization, the following error is reported:
-
-- **Standard Error Code**: `ETH_E_UNINIT`
-- **Vendor-Specific Error Code**: `ETH_17_LETH_E_UNINIT` (Value: 0x02)
-- **Error Type**: Development error
-- **Description**: The error is reported in case the API service is invoked without the initialization of ETH module or controller.
-
-### Error Reporting Mechanisms
-Depending on the configuration and implementation:
-- **Det_ReportError()** - Standard AUTOSAR Development Error Tracer
-- **Eth_ErrorHook()** - Custom error hook function that handles the ETH_E_UNINIT error code
-- **DEM Events** - For specific errors like ETH_E_ACCESS, ETH_E_CRC, etc.
-
-### APIs Subject to ETH_E_UNINIT/ETH_17_LETH_E_UNINIT Errors
-The following API functions must not be called before initialization and will trigger the error if invoked prematurely:
-
-#### Controller Management
-- `Eth_SetControllerMode()`
-- `Eth_GetControllerMode()`
-- `Eth_17_Leth_GetControllerMode`
-- `Eth_17_Leth_SetControllerMode`
-
-#### Address Management
-- `Eth_GetPhysAddr()`
-- `Eth_SetPhysAddr()`
-- `Eth_UpdatePhysAddrFilter()`
-- `Eth_17_Leth_GetPhysAddr`
-- `Eth_17_Leth_SetPhysAddr`
-- `Eth_17_Leth_UpdatePhysAddrFilter`
-
-#### Transmission Functions
-- `Eth_Transmit()`
-- `Eth_Receive()`
-- `Eth_ProvideTxBuffer()`
-- `Eth_17_Leth_Transmit`
-- `Eth_17_Leth_Receive`
-- `Eth_17_Leth_ProvideTxBuffer`
-- `Eth_17_Leth_TxConfirmation`
-- `Eth_17_Leth_ImmediateTransmit`
-
-#### MII Interface
-- `Eth_WriteMii()`
-- `Eth_ReadMii()`
-- `Eth_ReadMmd()`
-- `Eth_WriteMmd()`
-- `Eth_17_Leth_ReadMii`
-- `Eth_17_Leth_WriteMii`
-
-#### Statistics and Counter Functions
-- `Eth_GetCounterValues()`
-- `Eth_GetRxStats()`
-- `Eth_GetTxStats()`
-- `Eth_GetTxErrorCounterValues()`
-- `Eth_GetSpiStatus()`
-- `Eth_17_Leth_GetCounterValues`
-- `Eth_17_Leth_GetRxStats`
-- `Eth_17_Leth_GetTxErrorCounterValues`
-- `Eth_17_Leth_GetTxStats`
-
-#### Time Functions
-- `Eth_GetCurrentTimeTuple()`
-- `Eth_SetPhcTime()`
-- `Eth_SetPhcCorrection()`
-- `Eth_SetPpsSignalMode()`
-- `Eth_EnableEgressTimeStamp()`
-- `Eth_GetEgressTimeStamp()`
-- `Eth_GetIngressTimeStamp()`
-- `Eth_17_Leth_GetCurrentTime`
-- `Eth_17_Leth_GetEgressTimeStamp`
-- `Eth_17_Leth_GetIngressTimeStamp`
-- `Eth_17_Leth_SetPhcCorrection`
-- `Eth_17_Leth_SetPhcTime`
-- `Eth_17_Leth_SetPpsSignalMode`
-- `Eth_17_Leth_EnableEgressTimeStamp`
-
-#### Additional Functions
-- `Eth_ControllerInit()`
-- `Eth_GetCounterState()`
-- `Eth_17_Leth_DeInit`
-- `Eth_17_Leth_ErrorHdlr`
-- `Eth_17_Leth_PrepareControllers`
-- `Eth_17_Leth_RxDmaIrqHdlr`
-- `Eth_17_Leth_SelectMdioRegSpace`
-- `Eth_17_Leth_TxDmaIrqHdlr`
-- `Eth_ReleaseRxBuffer()`
-
-## Configuration Dependencies
-
-The behavior of API restrictions depends on the following configuration parameters:
-- **EthDevErrorDetect**: Enables development error detection
-- **EthPhcSupport**: When TRUE, requires additional clock initialization
-- **EthGlobalTimeSupport**: Affects time-related function behavior
-
-## Implementation Notes
-
-1. All Ethernet driver API functions (except the specifically allowed ones) must check for driver initialization status before execution
-2. If the driver is not initialized, these functions must return the ETH_E_UNINIT error code and invoke the appropriate error reporting mechanism
-3. The initialization state should be tracked internally by the driver implementation
-4. Scheduled functions like Eth_MainFunction() are generally allowed but should return immediately when uninitialized
-5. Some requirements regarding time functions are marked as OBSOLETE or DRAFT status in the documentation
-```
-
-</details>
-
-<details>
-<summary>KG 1.0 Output</summary>
-
-```
-Not Able to find the specific functions
-```
-
-</details>
-
-<details>
-<summary>Naive RAG Output</summary>
-
-```
-Only Eth_Init (and vendor-specific version info APIs) may be called before the Ethernet driver is initialized. Calling any other service (e.g., Eth_SetControllerMode, Eth_GetControllerMode, Eth_GetPhysAddr, Eth_SetPhysAddr) before initialization results in the production error ETH_E_ACCESS.
-```
-
-</details>
-
----
-
-### Query 6: In indirect transmission, what uniquely identifies a transmission request across API calls, and which APIs participate in the lifecycle including confirmation?
-
-**Format:** markdown · **Cross-doc:** No
-
-**Ground Truth:**
-> There are 11 SCB blocks: SCB0 (0x40600000), SCB1 (0x40610000), SCB2 (0x40620000), SCB3 (0x40630000), SCB4 (0x40640000), SCB5 (0x40650000), SCB6 (0x40660000), SCB7 (0x40670000), SCB8 (0x40680000), SCB9 (0x40690000), and SCB10 (0x406A0000), spanning the address range 0x40600000–0x406A0000.
-
-| System | Correctness | Completeness | No-Halluc | Relevance | Composite |
-|--------|-------------|--------------|-----------|-----------|-----------|
-| KG 2.0 | 1.0 | 1.0 | 1.0 | 0.0 | 0.750 |
-| KG 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.000 |
-| Naive RAG | 0.5 | 0.5 | 0.5 | 1.0 | 0.625 |
-
-<details>
-<summary>KG 2.0 Output</summary>
-
-```
-There are 11 SCB blocks: SCB0 (0x40600000), SCB1 (0x40610000), SCB2 (0x40620000), SCB3 (0x40630000), SCB4 (0x40640000), SCB5 (0x40650000), SCB6 (0x40660000), SCB7 (0x40670000), SCB8 (0x40680000), SCB9 (0x40690000), and SCB10 (0x406A0000), spanning the address range 0x40600000–0x406A0000.
-```
-
-</details>
-
-<details>
-<summary>KG 1.0 Output</summary>
-
-```
-The device has 2 SCB (Serial Communication Block) instances—DW0 (0x40288000, CH_STRUCT0–128) and DW1 (0x40298000, CH_STRUCT0–64)—each with 64-byte channel structures containing control, status, descriptor, interrupt, and SRAM registers, configurable for UART, SPI, and I2C.
-```
-
-</details>
-
-<details>
-<summary>Naive RAG Output</summary>
-
-```
-Based on the memory mapping provided in the context, there are 11 Serial Communication Blocks (SCB) present. They occupy the address range from 0x40600000 to 0x406aFFFF.
-
-- The base addresses of the SCBs are:
-  - SCB 0: 0x40600000
-  - SCB 1: 0x40610000
-  - SCB 2: 0x40620000
-  - SCB 3: 0x40630000
-  - SCB 4: 0x40640000
-  - SCB 5: 0x40650000
-  - SCB 6: 0x40660000
-  - SCB 7: 0x40670000
-  - SCB 8: 0x40680000
-  - SCB 9: 0x40690000
-  - SCB 10: 0x406a0000
-
-Each SCB has a size of 64KB (0x10000 bytes), resulting in a contiguous address range from 0x40600000 to 0x406aFFFF.
-```
-
-</details>
 
 ---
 
@@ -735,7 +432,7 @@ Each SCB has a size of 64KB (0x10000 bytes), resulting in a contiguous address r
 
 Questions from xlsx and xml source documents. KG 1.0 does not support these formats.
 
-### Query 7: How many times was 'Leth_Tc_Fn_003' updated as per the revision history of 'Test Data for Eth_17_Leth'
+### Query 5: How many times was 'Leth_Tc_Fn_003' updated as per the revision history of 'Test Data for Eth_17_Leth'
 
 **Format:** xlsx · **Cross-doc:** No
 
@@ -811,7 +508,7 @@ Updates recorded on:
 
 ---
 
-### Query 8: For test case Leth_Tc_Fn_002, what is the test objective and what are the expected DUT output parameter values for parameter set P01?
+### Query 6: For test case Leth_Tc_Fn_002, what is the test objective and what are the expected DUT output parameter values for parameter set P01?
 
 **Format:** xlsx · **Cross-doc:** Yes
 
@@ -911,7 +608,7 @@ Based on the provided context, the details for test case **Leth_Tc_Fn_002** are 
 
 Questions from docx source documents. KG 1.0 does not support this format.
 
-### Query 9: What are the three features listed under the ETH_17_LETH static view in the SWA document?
+### Query 7: What are the three features listed under the ETH_17_LETH static view in the SWA document?
 
 **Format:** docx · **Cross-doc:** No
 
@@ -994,7 +691,7 @@ This information is derived from the version history entries, which consistently
 
 ---
 
-### Query 10: How is promiscuous mode realized in the LETH hardware, and what configuration container controls the Rx DMA channel for frames failing MAC filters?
+### Query 8: How is promiscuous mode realized in the LETH hardware, and what configuration container controls the Rx DMA channel for frames failing MAC filters?
 
 **Format:** docx · **Cross-doc:** No
 
