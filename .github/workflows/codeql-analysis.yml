@@ -1,1 +1,10 @@
 # Empty github workflow file to disable codeql analysis.
+name: "Disabled CodeQL"
+on:
+  workflow_dispatch:
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CodeQL is disabled"
+
